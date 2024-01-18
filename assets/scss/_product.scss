@@ -1,0 +1,226 @@
+.top-product{
+    background: rgba(255, 255, 255, 1);
+    // padding: 80px 45px;
+    padding: 80px 0;
+    background: #fff;
+    margin: 0 auto;
+   
+    .container{
+        // padding: 0;
+        // @media ($Mobile) {
+        // //    padding: 0 45px; 
+        // }
+        position: relative;
+        width: 100%;
+        .swiper-button-next,
+        .swiper-button-prev
+        {
+            display: flex;
+            &.active{
+                display:none !important;
+            }
+        }
+
+
+}
+}
+.TopProduct{
+    overflow: hidden;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+
+.card_info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product_item{
+width: 100%;
+height: fit-content;
+border-radius: 8px;
+border: 1px solid rgba(204, 219, 253, 1);
+padding: 9px;
+position: relative;
+display: flex;
+
+.product_image{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 17px;
+    img{
+        border-radius: 8px;
+        width: 100%;
+    }
+}
+.product_action{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    // gap: 10px 0;
+    padding: 0 5px;
+    @media (max-width:1400px) {
+        padding: 0;
+    }
+
+.product_title{
+    color: rgba(3, 66, 105, 1);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0em;
+    margin-bottom: 10px;
+    @media #{$MiddleLapTop}{
+        font-size: 18px;
+    }
+
+}
+.product_description{
+    color: rgba(49, 112, 246, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin-bottom: 10px;
+    min-height: 66px;
+    @media #{$MiddleLapTop}{
+        font-size: 14px;
+    }
+    @media #{$LapTop}{
+        min-height: 88px;
+    }
+    @media #{$Tab}{
+        min-height: 66px;
+    }
+    @media #{$SmallMobile}{
+        min-height: 88px;
+    }
+}
+
+.bottom_info{
+    align-items: center;
+    display: flex;
+    justify-content: space-between ;
+    p{
+        margin: 0;
+        color: rgba(3, 66, 105, 1);
+        
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        @media #{$MiddleLapTop}{
+            font-size: 18px;
+        }
+    }
+    a{
+        border: 1px solid rgba(229, 237, 254, 1);
+        padding: 10px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        object-fit: contain;
+        img{
+            width: 100%;
+        }
+    }
+}
+}
+
+}
+.all_content{
+    text-align: center;
+    // margin-bottom: 80px;
+    a{
+        color: rgba(49, 112, 246, 1);
+        
+font-size: 16px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+}
+// swiber button style
+.swiper-button-next,.swiper-button-prev{
+    position: absolute;
+    top: 58%;
+    width: 44px ;
+    height: 44px;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgba(229, 237, 254, 1);
+    font-weight: 900;
+    
+    transition: all .3s linear;
+    &::after{
+        font-size: 14px;
+       color: #000;
+       text-align: center;
+       font-weight: 900 !important;
+    }
+    &:hover{
+        background: rgba(204, 219, 253, 1);
+    }
+    }
+.swiper-button-prev{
+        left: -44px;
+    }
+.swiper-button-next{
+        right: -44px;
+ }
+    // 
+    .product_top_info{
+        position: absolute;
+        right: 20px ;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 0 16px ;
+        width: fit-content;
+    .tops_btn{
+    background: rgba(49, 112, 246, 1);
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    &.orange{
+        background: rgba(248, 131, 24, 1);
+    }
+    }
+    
+    }
+    .slide_contents{
+        &.active{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 25px 25px;
+            .col-md-3{
+                margin: 0 !important;
+                width: calc(33.33% - 25px) ;
+            
+                @media (max-width:992px) {
+                    width: calc(50% - 25px) ;
+                }
+                @media ($Mobile) {
+                    width: 100%;
+                }
+            
+            }
+        }
+        display: flex;
+    }

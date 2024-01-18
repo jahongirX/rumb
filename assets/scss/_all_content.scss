@@ -1,0 +1,113 @@
+.travel_content_all {
+    width: 100%;
+    padding: 80px 0;
+    background: #ffffff;
+    .row {
+        margin: 0;
+    }
+    .container {
+        .all_content {
+            margin-top: 60px;
+        }
+        @media ($Mobile) {
+            padding: 0 15px;
+        }
+    }
+}
+.all_content_container {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px 0px;
+    .col-md-3 {
+        width: calc(33.333% - 12.5px) !important;
+        @media #{$SmallTab} {
+            width: calc(50% - 12.5px) !important;
+        }
+        @media ($Mobile) {
+            width: 100% !important;
+        }
+
+        border: 1px solid rgba(204, 219, 253, 1);
+        border-radius: 8px;
+        padding: 10px;
+        .content_item {
+            // image
+            .content_item_image {
+                position: relative;
+                width: 100%;
+                object-fit: contain;
+                .product_top_info {
+                    top: 10px;
+                    right: 10px;
+                }
+                .img {
+                    border-radius: 5px;
+                    width: 100%;
+                }
+                .content_item_title {
+                    border-radius: 0 0 5px 5px;
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+                    padding: 10px 20px;
+                    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+                    font-family: "Manrope";
+                    color: rgba(255, 255, 255, 1);
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    @media #{$MiddleLapTop} {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .content_action {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px 0;
+                p {
+                    color: rgba(1, 25, 39, 1);
+                    font-family: "Manrope";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    @media #{$MiddleLapTop} {
+                        font-size: 14px;
+                    }
+                    span {
+                        padding-right: 4px;
+                        color: rgba(49, 112, 246, 1);
+                        font-family: "Manrope";
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: right;
+                        @media #{$MiddleLapTop} {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.none_content {
+    display: none;
+}

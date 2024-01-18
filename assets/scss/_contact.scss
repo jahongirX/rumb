@@ -1,0 +1,78 @@
+.contact_section {
+    width: 100%;
+    .top-product {
+        background: none;
+    }
+    .product_item {
+        width: 100%;
+        padding: 30px;
+        background: #ffffff;
+        @media #{$MiddleLapTop} {
+            padding: 20px 10px;
+        }
+        .card_info {
+            height: 100%;
+            @media ($LapTop) {
+            }
+            @media ($Mobile) {
+                width: 100%;
+            }
+        }
+        // image
+        .product_image {
+            width: 100%;
+            text-align: center;
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+        // product_action
+        .product_action {
+            @media #{$SmallTab} {
+                padding: 0;
+            }
+            .product_title {
+                text-align: center;
+            }
+            .contact_description {
+                color: rgba(1, 25, 39, 1);
+                font-family: "Manrope";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0.04em;
+                text-align: center;
+                min-height: 66px;
+                margin-bottom: 11px;
+                @media #{$MiddleLapTop} {
+                    font-size: 14px;
+                }
+                a {
+                    text-transform: capitalize;
+                    color: rgba(49, 112, 246, 1);
+                }
+            }
+            .contact_phone {
+                display: flex;
+                justify-content: center;
+                gap: 0 4px;
+                margin-bottom: 21px;
+                a {
+                    color: var(--Primary-blue-100, #3170f6);
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: normal;
+                    @media #{$MiddleLapTop} {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+.slides_contact {
+    overflow: hidden;
+    padding: 0;
+}

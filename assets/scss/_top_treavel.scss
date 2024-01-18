@@ -1,0 +1,69 @@
+.top_travel{
+    padding: 80px 0;
+    // .container{
+    //     padding: 80px 0;
+    //     @media ($Mobile) {
+    //         padding: 80px 0;
+    //     }
+    // }
+    .travel_items{
+        display: flex;
+        gap: 25px 0;
+
+    }
+    .travel_item{
+    padding: 10px;
+    border: 1px solid rgba(204, 219, 253, 1);
+    border-radius: 8px;
+    transition: all .3s ease;
+    &:hover{
+        box-shadow: 0px 3px 24px 0px rgba(3, 66, 105, 0.12);
+
+    }
+    .travel_content{
+        justify-content: space-between;
+        .travel_image{
+        img{
+            width: 100%;
+            border-radius: 5px;
+            object-fit: contain;
+        }
+         width: calc(30% - 10px);
+        }
+        
+        .travels_info{
+            width: calc(70% - 10px);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .travel_title{
+                color: rgba(49, 112, 246, 1);
+                
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                @media #{$MiddleLapTop}{
+                    font-size: 14px;
+                }
+
+            }
+            .travel_sum{
+                color: rgba(3, 66, 105, 1);
+                
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+                @media #{$MiddleLapTop}{
+                    font-size: 18px;
+                }
+
+            }
+        }
+
+    }
+    }
+}
