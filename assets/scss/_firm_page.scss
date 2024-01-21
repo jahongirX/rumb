@@ -1,0 +1,204 @@
+.firm {
+  margin-top: 120px;
+  margin-bottom: 25px;
+  .firm_inner {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    gap: 20px;
+  }
+  .firm_contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-right: 1px solid var(--Gray-100, #ccdbfd);
+    background: #fff;
+    padding-right: 45px;
+    flex: 0 0 30%;
+    .firm_name {
+      display: flex;
+      align-items: center;
+      color: var(--Neutral-Neutral-100, #011927);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .firm_link {
+      color: var(--Neutral-Neutral-100, #011927);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .button_linear {
+      margin-top: 38px;
+    }
+  }
+  .firm_tours {
+    flex: 0 0 70%;
+    padding-top: 10px;
+
+    .tour_block {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+      .tour_item {
+        border-radius: 4px;
+        background: #f2f4fb;
+        padding: 20px;
+        flex: 0 0 calc(25% - 20px);
+
+        .tour_img {
+          margin: 16px 0;
+        }
+        .tour_name {
+          width: 140px;
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          a {
+            overflow: hidden;
+            color: var(--Primary-blue-100, #3170f6);
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+        .tour_addedtime {
+          color: var(--Neutral-Neutral-80, #034269);
+          margin-top: 5px;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+        .price {
+          padding-top: 26px;
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          justify-content: space-between;
+
+          color: var(--Neutral-Neutral-80, #034269);
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+.firm_description {
+  margin-bottom: 60px;
+  .firm_description_inner {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    color: var(--Neutral-Neutral-100, #011927);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    letter-spacing: 0.28px;
+
+    > div {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.top_tours {
+  margin-bottom: 70px;
+  .top_tours_inner {
+    .tour_block {
+      margin-bottom: 50px;
+      display: flex;
+      align-items: stretch;
+      gap: 20px;
+
+      .tour_item {
+        flex: 0 0 25%;
+        border-radius: 8px;
+        border: 1px solid var(--Gray-100, #ccdbfd);
+        background: #fff;
+        padding: 20px;
+
+        .tour_name {
+          margin-bottom: 10px;
+          max-width: 234px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          a {
+            overflow: hidden;
+            color: var(--Primary-blue-100, #3170f6);
+
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+        .stars {
+          margin-bottom: 20px;
+        }
+        .tour_img {
+          width: 234px;
+          height: 180px;
+          margin-bottom: 20px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+        }
+        .price {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: var(--Neutral-Neutral-80, #034269);
+
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+    .tour_alllink {
+      color: var(--Primary-blue-100, #3170f6);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.contact_section {
+  .contact_block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .product_item {
+      flex: 0 0 25%;
+    }
+  }
+}

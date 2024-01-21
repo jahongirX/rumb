@@ -70,7 +70,7 @@
     @media #{$Tab} {
       gap: 0;
     }
-    @media #{$SmallTab} {
+    @media #{$Mobile} {
       background: none;
       flex-direction: column;
       justify-content: space-between;
@@ -91,43 +91,36 @@
       gap: 56px;
       padding: 10px 0;
       @media #{$Tab} {
-        justify-content: center;
+        justify-content: flex-start;
       }
 
       &:first-child {
         width: 219px;
         @media #{$MiddleLapTop} {
-          width: 199px;
-        }
-        @media #{$Tab} {
-          width: 135px;
+          width: auto;
+          flex: 0 0 20%;
+          padding-left: 15px;
         }
       }
       &:nth-child(2) {
         width: 247px;
         @media #{$MiddleLapTop} {
-          width: 199px;
-        }
-        @media #{$Tab} {
-          width: 134px;
+          width: auto;
+          flex: 0 0 20%;
         }
       }
       &:nth-child(3) {
         width: 201px;
         @media #{$MiddleLapTop} {
-          width: 198px;
-        }
-        @media #{$Tab} {
-          width: 133px;
+          width: auto;
+          flex: 0 0 20%;
         }
       }
       &:last-child {
         width: 232px;
         @media #{$MiddleLapTop} {
-          width: 200px;
-        }
-        @media #{$Tab} {
-          width: 136px;
+          width: auto;
+          flex: 0 0 20%;
         }
       }
 
@@ -143,15 +136,19 @@
         border-right: 0;
         // width: 232px;
         flex: 1 1 auto;
+        @media #{$MiddleLapTop} {
+          flex: 0 0 20%;
+        }
       }
       .filters_info {
         display: flex;
         gap: 0 8px;
         .filter_image {
-          @media #{$Tab} {
+          
+          @media #{$SmallTab} {
             display: none;
           }
-          @media #{$SmallTab} {
+          @media #{$Mobile} {
             display: block;
           }
         }

@@ -1,269 +1,279 @@
 .footer-top_contents {
-    // gap: 25px 0 !important;
+  // gap: 25px 0 !important;
 
+  @media #{$Mobile} {
+    gap: 30px !important;
+  }
+  .menu_lists {
+    padding-top: 26px;
+    margin-right: 97px;
+    @media #{$Tab} {
+      margin-right: 77px;
+    }
+    @media #{$SmallTab} {
+      margin-right: 0;
+    }
     @media #{$Mobile} {
-        gap: 30px !important;
+      padding-top: 0;
     }
-    .menu_lists {
-        padding-top: 26px;
-        margin-right: 97px;
-        @media #{$Tab} {
-            margin-right: 77px;
-        }
-        @media #{$SmallTab} {
-            padding-top: 0;
-        }
+  }
+  .footer_btn_group {
+    padding-top: 26px;
+    @media #{$Mobile} {
+      padding-top: 0;
     }
-    .footer_btn_group {
-        padding-top: 26px;
-        @media #{$SmallTab} {
-            padding-top: 0;
-        }
-    }
+  }
 }
 
 .footer {
-    background: rgba(1, 25, 39, 1);
-    padding: 34px 0 60px;
+  background: rgba(1, 25, 39, 1);
+  padding: 34px 0 60px;
+  @media #{$Mobile} {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .row {
+    margin: 0;
+  }
+  .col-md-12 {
+    padding: 0;
+  }
+  .button_linear {
+    padding: 12px 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo_section {
+    margin-right: 60px;
+    @media #{$Tab} {
+      margin-right: 25px;
+    }
     @media #{$Mobile} {
-        padding-top: 30px;
-        padding-bottom: 40px;
+      width: 100%;
     }
-    .row {
-        margin: 0;
+  }
+
+  // logo vs description
+  .logo_f {
+    display: flex;
+    margin-bottom: 28px;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 24.029px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.481px;
+    @media #{$Mobile} {
+      margin-bottom: 8px;
     }
-    .col-md-12 {
-        padding: 0;
-    }
-    .button_linear {
-        padding: 12px 18px;
+  }
+  .footer_descripiton_mobile {
+    display: none;
+    @media #{$Mobile} {
+      display: block;
+      .program_info {
+        color: rgba(255, 255, 255, 1);
+        font-family: "Manrope";
         font-size: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .logo_section {
-        margin-right: 60px;
-        @media #{$Tab} {
-            margin-right: 25px;
+        font-weight: 300;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 10px;
+        &:nth-child(2) {
+          margin-bottom: 37px;
         }
-        @media #{$SmallTab} {
-            width: 100%;
-        }
-    }
-
-    // logo vs description
-    .logo_f {
-        display: flex;
-        margin-bottom: 28px;
-        align-items: center;
-        gap: 10px;
-        color: #fff;
-        font-size: 24.029px;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.481px;
-        @media #{$Mobile} {
-            margin-bottom: 8px;
-        }
-    }
-    .footer_descripiton_mobile {
-        display: none;
-        @media #{$SmallTab} {
-            display: block;
-            .program_info {
-                color: rgba(255, 255, 255, 1);
-                font-family: "Manrope";
-                font-size: 12px;
-                font-weight: 300;
-                line-height: 14px;
-                letter-spacing: 0em;
-                text-align: left;
-                margin-bottom: 10px;
-                &:nth-child(2) {
-                    margin-bottom: 37px;
-                }
-                &:nth-child(3) {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    a {
-                        @media #{$SmallTab} {
-                            color: #fff;
-                        }
-                    }
-                }
-                @media #{$Mobile} {
-                    font-size: 10px;
-                }
-            }
-            .end_link {
-                text-decoration: underline;
-                color: rgba(255, 255, 255, 1);
-                font-family: "Manrope";
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 14px;
-                letter-spacing: 0em;
-                text-align: left;
-                @media #{$SmallTab} {
-                    color: #1eb2f1;
-                }
-            }
-        }
-    }
-    .footer_descripiton {
-        @media #{$SmallTab} {
-            display: none;
-        }
-        .program_info {
-            color: rgba(255, 255, 255, 1);
-            font-family: "Manrope";
-            font-size: 12px;
-            font-weight: 300;
-            line-height: 14px;
-            letter-spacing: 0em;
-            text-align: left;
-            margin-bottom: 10px;
-            &:nth-child(2) {
-                margin-bottom: 37px;
-            }
-            &:nth-child(3) {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            @media #{$Tab} {
-                font-size: 10px;
-            }
-        }
-        .end_link {
-            text-decoration: underline;
-            color: rgba(255, 255, 255, 1);
-            font-family: "Manrope";
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 14px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
-    }
-    .links_content {
-        gap: 25px 25px;
-    }
-    .menu_item {
-        gap: 25px 0;
-        align-items: flex-start;
-        @media (max-width: 992px) {
-            flex-direction: column;
-        }
-        @media (max-width: 768px) {
-            flex-direction: row;
-            gap: 39px;
-        }
-        > ul {
-            &:first-of-type {
-                margin-right: 120px;
-                @media #{$Tab} {
-                    margin-right: 25px;
-                }
-            }
-            &:nth-last-of-type(2) {
-                margin-right: 88px;
-                @media #{$Tab} {
-                    margin-right: 25px;
-                }
-            }
-        }
-    }
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 10px 0;
-        li {
-            a {
-                color: rgba(255, 255, 255, 1);
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 14px;
-                letter-spacing: 0em;
-                text-align: left;
-                @media #{$Mobile} {
-                    font-size: 10px;
-                }
-            }
-            &:nth-child(1) {
-                a {
-                    color: #fff;
-                    font-size: 14px;
-                    font-weight: 700;
-                    line-height: 140%;
-                    letter-spacing: 1.12px;
-                    text-transform: uppercase;
-                    @media #{$Mobile} {
-                        font-size: 12px;
-                    }
-                }
-                font-weight: 600;
-                margin-bottom: 10px;
-                @media #{$Mobile} {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-    .footer_action {
-        display: flex;
-        flex-direction: column;
-        gap: 10px 0;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        a {
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 14px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: rgba(255, 255, 255, 1);
-            text-decoration: underline;
+        &:nth-child(3) {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          a {
             @media #{$Mobile} {
-                font-size: 10px;
+              color: #fff;
             }
+          }
         }
+        @media #{$Mobile} {
+          font-size: 10px;
+        }
+      }
+      .end_link {
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 1);
+        font-family: "Manrope";
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        @media #{$Mobile} {
+          color: #1eb2f1;
+        }
+      }
     }
+  }
+  .footer_descripiton {
+    @media #{$Mobile} {
+      display: none;
+    }
+    .program_info {
+      color: rgba(255, 255, 255, 1);
+      font-family: "Manrope";
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 10px;
+      &:nth-child(2) {
+        margin-bottom: 37px;
+      }
+      &:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      @media #{$Tab} {
+        font-size: 10px;
+      }
+    }
+    .end_link {
+      text-decoration: underline;
+      color: rgba(255, 255, 255, 1);
+      font-family: "Manrope";
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .links_content {
+    gap: 25px 25px;
+  }
+  .menu_item {
+    gap: 25px 0;
+    align-items: flex-start;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+      margin-right: 50px;
+    }
+    > ul {
+      &:first-of-type {
+        margin-right: 120px;
+        @media #{$Tab} {
+          margin-right: 25px;
+        }
+      }
+      &:nth-last-of-type(2) {
+        margin-right: 88px;
+        @media #{$Tab} {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    @media #{$SmallTab} {
+      gap: 0;
+    }
+    li {
+      a {
+        color: rgba(255, 255, 255, 1);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        @media #{$Mobile} {
+          font-size: 10px;
+        }
+      }
+      &:nth-child(1) {
+        a {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: 1.12px;
+          text-transform: uppercase;
+          @media #{$Mobile} {
+            font-size: 12px;
+          }
+        }
+        font-weight: 600;
+        margin-bottom: 10px;
+        @media #{$Tab} {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .footer_action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    a {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 1);
+      text-decoration: underline;
+      @media #{$Mobile} {
+        font-size: 10px;
+      }
+    }
+  }
 }
 .footer_btn_group {
-    @media #{$SmallTab} {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px 50px;
-        align-items: flex-end;
-        .footer_action {
-            width: calc(50% - 25px);
-            margin: 0;
-        }
-        ul {
-            width: calc(50% - 25px);
-            @media #{$Mobile} {
-                gap: 8px;
-            }
-            li {
-                a {
-                    @media #{$Mobile} {
-                        font-weight: 300;
-                    }
-                }
-            }
-        }
-        .buttons {
-            width: 100%;
-            display: block;
-        }
-        .button_linear {
-            width: 100%;
-            display: flex;
-        }
+  @media #{$SmallTab} {
+    flex: 1 1 auto;
+  }
+  @media #{$Mobile} {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+    align-items: flex-end;
+    .footer_action {
+      width: calc(50% - 25px);
+      margin: 0;
     }
+    ul {
+      width: calc(50% - 25px);
+      @media #{$Mobile} {
+        gap: 8px;
+      }
+      li {
+        a {
+          @media #{$Mobile} {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .buttons {
+      width: 100%;
+      display: block;
+    }
+    .button_linear {
+      width: 100%;
+      display: flex;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 .turfirmi_section_hero {
   padding-top: 80px;
-  // margin-top: 30px;
+  margin-top: 130px;
   background-image: url(../image/bg.png);
   background-size: cover;
   background-position: top center;
@@ -76,24 +76,7 @@
     gap: 40px;
     padding: 30px 0 40px 0;
   }
-  .tor_smal_link {
-    gap: 0 4px;
-
-    li {
-      a {
-        color: rgba(255, 255, 255, 1);
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 16px;
-      }
-
-      &:nth-child(1) {
-        a {
-          color: rgba(255, 255, 255, 0.7);
-        }
-      }
-    }
-  }
+ 
 
   .turfirm_title {
     color: rgba(255, 255, 255, 1);
@@ -498,3 +481,4 @@
     }
   }
 }
+

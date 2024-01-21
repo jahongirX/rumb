@@ -125,6 +125,7 @@
     .tour_images {
       flex: 0 0 calc(30% - 20px);
       order: 2;
+      position: relative;
       @media #{$MiddleLapTop} {
         flex: 0 0 calc(28% - 20px);
       }
@@ -138,6 +139,23 @@
         order: 3;
         width: 100%;
         flex: 0 0 100%;
+      }
+      .slider_number {
+        position: absolute;
+        border-radius: 2px;
+        border: 1px solid #fff;
+        background: var(--Primary-blue-100, #3170f6);
+        color: #fff;
+        padding: 0 8px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        bottom: 4px;
+        right: 4px;
+        z-index: 99;
       }
       .slider {
         color: #fff;
@@ -179,10 +197,11 @@
       .slider__next:focus {
         outline: none;
       }
+
       .slider__thumbs {
         height: 210px;
         @media #{$MiddleLapTop} {
-         height: 170px;
+          height: 170px;
         }
         @media #{$SmallTab} {
           height: 120px;
@@ -196,9 +215,45 @@
         height: 210px;
         @media #{$MiddleLapTop} {
           height: 170px;
-         }
+        }
         @media #{$SmallTab} {
           height: 120px;
+        }
+        @media #{$Mobile} {
+          height: 100%;
+        }
+        .swiper-button-prev {
+          @media #{$Mobile} {
+            left: -5px;
+            background-color: #000;
+          }
+        }
+        .swiper-button-next {
+          @media #{$Mobile} {
+            right: -5px;
+            background-color: #000;
+          }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none;
+    
+          @media #{$Mobile} {
+            width: 32px;
+            height: 32px;
+          }
+          @media #{$Mobile} {
+            display: block;
+    
+            &::after {
+              font-size: 12px;
+              color: #fff;
+              text-align: center;
+              font-weight: 900 !important;
+              top: 10px;
+              position: absolute;
+            }
+          }
         }
       }
       .slider__images .slider__image img {
@@ -348,7 +403,7 @@
       display: flex;
       align-items: center;
       gap: 20px;
-      transition: .6s;
+      transition: 0.6s;
       &.fixed {
         position: fixed;
         bottom: 0;
@@ -359,7 +414,7 @@
         box-shadow: 0px -3px 24px 0px rgba(3, 66, 105, 0.12);
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
         z-index: 999;
-        padding: 16px ;
+        padding: 16px;
       }
       .button_linear {
         @media #{$MiddleLapTop} {

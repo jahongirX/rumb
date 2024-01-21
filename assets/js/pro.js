@@ -120,8 +120,8 @@ $(document).ready(function () {
     mousewheel: true, // можно прокручивать изображения колёсиком мыши
     navigation: {
       // задаем кнопки навигации
-      nextEl: ".slider__next", // кнопка Next
-      prevEl: ".slider__prev", // кнопка Prev
+      nextEl: ".slider__images .swiper-button-next", // кнопка Next
+      prevEl: ".slider__images .swiper-button-prev", // кнопка Prev
     },
     grabCursor: true, // менять иконку курсора
     thumbs: {
@@ -143,7 +143,15 @@ $(document).ready(function () {
       },
     },
   });
+  // фунция для показа количество картинок в карусели
 
+  function countNumberSlideimages() {
+    $(".sl").each(function (e, index) {
+      let number = $(this).find("img").length;
+      $(".slider_number").html(`+${number}`);
+    });
+  }
+  countNumberSlideimages();
   //hide full content
   $(".items_news").css({
     display: "none",
@@ -236,8 +244,8 @@ $(document).ready(function () {
     });
   });
   let calendars = document.querySelectorAll(".calendar");
-  console.log(calendars)
-  if(calendars){
+  console.log(calendars);
+  if (calendars) {
     calendars.forEach(function (item, index) {
       let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">  <rect width="32" height="32" rx="16" transform="matrix(-1 0 0 1 32 0)" fill="#E5EDFE"/> <path d="M14.1859 21.0045C14.0568 21.131 13.8924 21.2 13.6986 21.2C13.3112 21.2 13 20.901 13 20.5215C13 20.3318 13.0822 20.1593 13.2172 20.0271L17.3268 16.0943L13.2172 12.1729C13.0822 12.0407 13 11.8625 13 11.6785C13 11.299 13.3112 11 13.6986 11C13.8924 11 14.0568 11.069 14.1859 11.1955L18.7534 15.5653C18.9178 15.7148 18.9941 15.8988 19 16.1C19 16.3012 18.9178 16.4737 18.7534 16.629L14.1859 21.0045Z" fill="#011927"/></svg>`;
       let exampleDates = [
@@ -256,7 +264,7 @@ $(document).ready(function () {
       });
     });
   }
-  
+
   // для правильной верстки
   let tHeight = $(".tour_title").height() - 30;
   if ($(window).width() >= 1024) {
@@ -277,10 +285,12 @@ $(document).ready(function () {
     });
   }
 
+  //  console.log( $('#lightgallery'))
+
   // для фиксирования кнопок в tour.html
 
   let contactsBlock = $(".contacts_block .buttons");
-  if(contactsBlock){
+  if (contactsBlock.length) {
     let offsetC = contactsBlock.offset();
     let sticky = offsetC.top;
     console.log($(window).scrollTop);
@@ -295,5 +305,102 @@ $(document).ready(function () {
       });
     }
   }
-  
+
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    // Custom options for the first gallery
+  });
+  let checker = $(".slider-range-1");
+  if (checker.length) {
+    function initializeSlider(
+      sliderId,
+      inputMinId,
+      inputMaxId,
+      initialMin,
+      initialMax
+    ) {
+      $("#" + sliderId).slider({
+        range: true,
+        min: initialMin,
+        max: initialMax,
+        values: [initialMin, initialMax],
+        slide: function (event, ui) {
+          $("#" + inputMinId).val(ui.values[0]);
+          $("#" + inputMaxId).val(ui.values[1]);
+        },
+      });
+
+      $("#" + inputMinId).val($("#" + sliderId).slider("values", 0));
+      $("#" + inputMaxId).val($("#" + sliderId).slider("values", 1));
+
+      $("#" + inputMinId).on("input", function () {
+        var minValue = parseInt($(this).val());
+        var maxValue = parseInt($("#" + inputMaxId).val());
+        $("#" + sliderId).slider("values", 0, minValue);
+      });
+
+      $("#" + inputMaxId).on("input", function () {
+        var minValue = parseInt($("#" + inputMinId).val());
+        var maxValue = parseInt($(this).val());
+        $("#" + sliderId).slider("values", 1, maxValue);
+      });
+    }
+
+    initializeSlider("slider-range-1", "input-min-1", "input-max-1", 1, 25);
+    initializeSlider(
+      "slider-range-2",
+      "input-min-2",
+      "input-max-2",
+      9000,
+      150000
+    );
+  }
+
+  function initializeSwiper(containerId) {
+    var swiper = new Swiper(`.${containerId}`, {
+      // ищем слайдер превью по селектору
+      // задаем параметры
+      direction: "horizontal", // вертикальная прокрутка
+      slidesPerView: 4, // показывать по 1 изображению
+      spaceBetween: 10, // расстояние между слайдами
+      mousewheel: true, // можно прокручивать изображения колёсиком мыши
+
+      grabCursor: true, // менять иконку курсора
+      breakpoints: {
+        // условия для разных размеров окна браузера
+        0: {
+          // при 0px и выше
+
+          direction: "horizontal", // горизонтальная прокрутка
+          slidesPerView: 2.5, // показывать по 1 изображению
+        },
+        568: {
+          slidesPerView: 3, // показывать по 1 изображению
+
+          direction: "horizontal", // вертикальная прокрутка
+        },
+        778: {
+          slidesPerView: 4, // показывать по 1 изображению
+
+          direction: "horizontal", // вертикальная прокрутка
+        },
+      },
+      // задаем кнопки навигации
+      navigation: {
+        nextEl: ".result_slider .swiper-button-next",
+        prevEl: ".result_slider .swiper-button-prev",
+      },
+    });
+  }
+
+  initializeSwiper("search-result-slider1");
+  initializeSwiper("search-result-slider2");
+  initializeSwiper("search-result-slider3");
+
+  // search page
+  $(".filter_togler").on("click", function (e) {
+    e.preventDefault();
+    $("html").toggleClass("ov");
+    $(".filter_block").toggleClass("active");
+  });
+  console.log($(".filter_togler").offset());
 });
