@@ -216,6 +216,10 @@ $(document).ready(function () {
 
   selects.niceSelect();
 
+  $('.filter_item').on('click',function(e){
+    e.preventDefault();console.log($(this).find(".nice-select"))
+    // $(this).find('.nice-select').addClass('open')
+  })
   // фунцкия  ссылки для выпадающего селекта
 
   $(".option").on("click", function (e) {
@@ -354,6 +358,7 @@ $(document).ready(function () {
       150000
     );
   }
+  // search page
 
   function initializeSwiper(containerId) {
     var swiper = new Swiper(`.${containerId}`, {
@@ -396,11 +401,52 @@ $(document).ready(function () {
   initializeSwiper("search-result-slider2");
   initializeSwiper("search-result-slider3");
 
-  // search page
   $(".filter_togler").on("click", function (e) {
     e.preventDefault();
     $("html").toggleClass("ov");
     $(".filter_block").toggleClass("active");
   });
   console.log($(".filter_togler").offset());
+  // firm page
+
+
+  
+  function initializeSwiper(containerId) {
+    var swiper = new Swiper(`.${containerId}`, {
+      // ищем слайдер превью по селектору
+      // задаем параметры
+      direction: "horizontal", // вертикальная прокрутка
+      slidesPerView: 4, // показывать по 1 изображению
+      spaceBetween: 20, // расстояние между слайдами
+      mousewheel: true, // можно прокручивать изображения колёсиком мыши
+
+      grabCursor: true, // менять иконку курсора
+      breakpoints: {
+        // условия для разных размеров окна браузера
+        0: {
+          // при 0px и выше
+
+          direction: "horizontal", // горизонтальная прокрутка
+          slidesPerView: 2.5, // показывать по 1 изображению
+        },
+        568: {
+          slidesPerView: 3, // показывать по 1 изображению
+
+          direction: "horizontal", // вертикальная прокрутка
+        },
+        778: {
+          slidesPerView: 4, // показывать по 1 изображению
+
+          direction: "horizontal", // вертикальная прокрутка
+        },
+      },
+      // задаем кнопки навигации
+      navigation: {
+        nextEl: ".result_slider .swiper-button-next",
+        prevEl: ".result_slider .swiper-button-prev",
+      },
+    });
+  }
+
+  initializeSwiper("tour_block");
 });

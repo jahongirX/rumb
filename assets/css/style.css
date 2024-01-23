@@ -518,10 +518,6 @@ html .ui-button.ui-state-disabled:active {
   --fancybox-bg: rgb(0, 0, 0, 0.5);
 }
 
-.fancybox__toolbar__column.is-right {
-  display: none;
-}
-
 .is-horizontal .f-carousel__nav .f-button.is-next,
 .is-horizontal .fancybox__nav .f-button.is-next,
 .is-horizontal .f-carousel__nav .f-button.is-prev,
@@ -532,6 +528,17 @@ html .ui-button.ui-state-disabled:active {
 
 .f-button svg {
   stroke: #000;
+}
+
+.fancybox__content {
+  width: 500px !important;
+  height: 500px !important;
+}
+@media (max-width:556px) {
+  .fancybox__content {
+    width: 200px !important;
+    height: 200px !important;
+  }
 }
 
 .row {
@@ -801,6 +808,10 @@ header .hamburger {
 .hero .hero_filter .filter_item .filters_info {
   display: flex;
   gap: 0 8px;
+  width: 100%;
+}
+.hero .hero_filter .filter_item .filters_info .filter_select {
+  flex: 1 1 auto;
 }
 @media (max-width:768px) {
   .hero .hero_filter .filter_item .filters_info .filter_image {
@@ -872,7 +883,12 @@ header .hamburger {
   color: rgb(49, 112, 246);
   -webkit-appearance: none;
   position: unset;
-  height: 20px;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  position: relative;
+  top: -15px;
+  background: transparent;
 }
 .hero .hero_filter .nice-select .list {
   width: 330px;
@@ -905,7 +921,7 @@ header .hamburger {
   transition: all 0.15s ease-in-out;
   width: 24px;
   background-image: url(../image//dropdown.png);
-  top: 0;
+  top: -10px;
   right: 20px;
 }
 .hero .hero_filter .nice-select.open::after {
@@ -3267,12 +3283,51 @@ header .hamburger {
 .firm .firm_tours {
   flex: 0 0 70%;
   padding-top: 10px;
+  width: 70%;
 }
 .firm .firm_tours .tour_block {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-top: 10px;
+}
+@media (max-width:556px) {
+  .firm .firm_tours .tour_block .swiper-button-prev {
+    left: -5px;
+    background-color: #000;
+  }
+}
+@media (max-width:556px) {
+  .firm .firm_tours .tour_block .swiper-button-next {
+    right: -5px;
+    background-color: #000;
+  }
+}
+.firm .firm_tours .tour_block .swiper-button-next,
+.firm .firm_tours .tour_block .swiper-button-prev {
+  display: none;
+}
+@media (max-width:556px) {
+  .firm .firm_tours .tour_block .swiper-button-next,
+  .firm .firm_tours .tour_block .swiper-button-prev {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width:556px) {
+  .firm .firm_tours .tour_block .swiper-button-next,
+  .firm .firm_tours .tour_block .swiper-button-prev {
+    display: block;
+  }
+  .firm .firm_tours .tour_block .swiper-button-next::after,
+  .firm .firm_tours .tour_block .swiper-button-prev::after {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900 !important;
+    top: 10px;
+    position: absolute;
+  }
 }
 .firm .firm_tours .tour_block .tour_item {
   border-radius: 4px;

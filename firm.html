@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- magnific-popup css -->
-    <link rel="stylesheet"  src="assets/libs/magnific-popup/magnific-popup.css">
-    
+    <!-- fancy-box css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -72,89 +72,144 @@
                             <div class="firm_logo"><img src="assets/image/eridan_travel.png" alt=""></div>
                             <div class="text">Турфирма MIX Tour</div>
                         </div>
-                        <a  class="firm_link" href="tel:+79999999" class="firm_number"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.9975 20C10.4659 20.0121 3.99088 13.4595 4.00001 5.00251C4.00001 4.45023 4.44773 4 5.00001 4H7.63937C8.13494 4 8.55593 4.36413 8.6287 4.85433C8.80311 6.0292 9.14517 7.17297 9.64448 8.2507L9.74725 8.4725C9.89013 8.78091 9.79328 9.14734 9.51668 9.34487C8.6993 9.92859 8.38692 11.1036 9.0237 12.0204C9.82278 13.1708 10.8301 14.1779 11.9803 14.9766C12.897 15.6132 14.0718 15.3009 14.6555 14.4836C14.8532 14.2069 15.2198 14.11 15.5284 14.2529L15.7492 14.3552C16.827 14.8545 17.9708 15.1966 19.1458 15.371C19.636 15.4437 20 15.8647 20 16.3603V19C20 19.5523 19.5512 20 18.9989 20L18.9975 20Z" fill="#034269"/>
-                          </svg> +7 999 99 99 99</a>
-                          <a  class="firm_link" href="mailto:info@email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M20 8L12 13L4 8V6L12 11L20 6M20 4H4C2.89 4 2 4.89 2 6V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4Z" fill="#034269"/>
-                          </svg>Info@email</a>
-                          <a class="firm_link"  href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M8.95 13.4H6.58C6.33845 12.4823 6.33845 11.5177 6.58 10.6H8.95C8.88834 11.0642 8.85495 11.5317 8.85 12C8.85495 12.4683 8.88834 12.9358 8.95 13.4ZM7.16 9.2H9.2C9.43329 8.33622 9.76198 7.50108 10.18 6.71C8.90435 7.1457 7.83087 8.03079 7.16 9.2ZM16.84 9.2C16.1639 8.03131 15.0876 7.14684 13.81 6.71C14.2338 7.49729 14.5595 8.33351 14.78 9.2M12 17.57C12.5942 16.7256 13.0468 15.79 13.34 14.8H10.66C10.9532 15.79 11.4058 16.7256 12 17.57ZM12 6.42C11.4053 7.26771 10.9527 8.20669 10.66 9.2H13.34C13.0473 8.20669 12.5947 7.26771 12 6.42ZM7.16 14.8C7.83508 15.9657 8.90704 16.8495 10.18 17.29C9.76198 16.4989 9.43329 15.6638 9.2 14.8M21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5ZM19 12C19 10.6155 18.5895 9.26215 17.8203 8.11101C17.0511 6.95986 15.9579 6.06266 14.6788 5.53284C13.3997 5.00303 11.9922 4.86441 10.6344 5.1345C9.2765 5.4046 8.02922 6.07128 7.05025 7.05025C6.07128 8.02922 5.4046 9.2765 5.1345 10.6344C4.86441 11.9922 5.00303 13.3997 5.53284 14.6788C6.06266 15.9579 6.95986 17.0511 8.11101 17.8203C9.26215 18.5895 10.6155 19 12 19C13.8565 19 15.637 18.2625 16.9497 16.9497C18.2625 15.637 19 13.8565 19 12ZM15.15 12C15.1451 12.4683 15.1117 12.9358 15.05 13.4H17.42C17.6616 12.4823 17.6616 11.5177 17.42 10.6H15.05C15.1117 11.0642 15.1451 11.5317 15.15 12ZM13.81 17.29C15.0862 16.8508 16.1618 15.9669 16.84 14.8H14.78C14.5595 15.6665 14.2338 16.5027 13.81 17.29ZM10.36 10.6C10.2107 11.5274 10.2107 12.4726 10.36 13.4H13.64C13.7085 12.9364 13.7452 12.4686 13.75 12C13.7455 11.5314 13.7088 11.0636 13.64 10.6H10.36Z" fill="#034269"/>
-                          </svg> www.mixspb.ru/onas.php</a>
-                         <div class="firm_link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 22.351L11.61 22.391L11.638 22.407C11.749 22.467 11.8733 22.4985 11.9995 22.4985C12.1257 22.4985 12.25 22.467 12.361 22.407L12.389 22.392L12.46 22.351C12.8511 22.1191 13.2328 21.8716 13.604 21.609C14.5651 20.9305 15.463 20.1667 16.287 19.327C18.231 17.337 20.25 14.347 20.25 10.5C20.25 8.31196 19.3808 6.21354 17.8336 4.66637C16.2865 3.11919 14.188 2.25 12 2.25C9.81196 2.25 7.71354 3.11919 6.16637 4.66637C4.61919 6.21354 3.75 8.31196 3.75 10.5C3.75 14.346 5.77 17.337 7.713 19.327C8.53664 20.1667 9.43427 20.9304 10.395 21.609C10.7666 21.8716 11.1485 22.1191 11.54 22.351ZM12 13.5C12.7956 13.5 13.5587 13.1839 14.1213 12.6213C14.6839 12.0587 15 11.2956 15 10.5C15 9.70435 14.6839 8.94129 14.1213 8.37868C13.5587 7.81607 12.7956 7.5 12 7.5C11.2044 7.5 10.4413 7.81607 9.87868 8.37868C9.31607 8.94129 9 9.70435 9 10.5C9 11.2956 9.31607 12.0587 9.87868 12.6213C10.4413 13.1839 11.2044 13.5 12 13.5Z" fill="#034269"/>
-                          </svg>Санкт-Петербург, Невский пр. 80, БЦ «Невский 80», оф. 4-1, 4 этаж</div>
+                        <a class="firm_link" href="tel:+79999999" class="firm_number"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M18.9975 20C10.4659 20.0121 3.99088 13.4595 4.00001 5.00251C4.00001 4.45023 4.44773 4 5.00001 4H7.63937C8.13494 4 8.55593 4.36413 8.6287 4.85433C8.80311 6.0292 9.14517 7.17297 9.64448 8.2507L9.74725 8.4725C9.89013 8.78091 9.79328 9.14734 9.51668 9.34487C8.6993 9.92859 8.38692 11.1036 9.0237 12.0204C9.82278 13.1708 10.8301 14.1779 11.9803 14.9766C12.897 15.6132 14.0718 15.3009 14.6555 14.4836C14.8532 14.2069 15.2198 14.11 15.5284 14.2529L15.7492 14.3552C16.827 14.8545 17.9708 15.1966 19.1458 15.371C19.636 15.4437 20 15.8647 20 16.3603V19C20 19.5523 19.5512 20 18.9989 20L18.9975 20Z"
+                                    fill="#034269" />
+                            </svg> +7 999 99 99 99</a>
+                        <a class="firm_link" href="mailto:info@email"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M20 8L12 13L4 8V6L12 11L20 6M20 4H4C2.89 4 2 4.89 2 6V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4Z"
+                                    fill="#034269" />
+                            </svg>Info@email</a>
+                        <a class="firm_link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M8.95 13.4H6.58C6.33845 12.4823 6.33845 11.5177 6.58 10.6H8.95C8.88834 11.0642 8.85495 11.5317 8.85 12C8.85495 12.4683 8.88834 12.9358 8.95 13.4ZM7.16 9.2H9.2C9.43329 8.33622 9.76198 7.50108 10.18 6.71C8.90435 7.1457 7.83087 8.03079 7.16 9.2ZM16.84 9.2C16.1639 8.03131 15.0876 7.14684 13.81 6.71C14.2338 7.49729 14.5595 8.33351 14.78 9.2M12 17.57C12.5942 16.7256 13.0468 15.79 13.34 14.8H10.66C10.9532 15.79 11.4058 16.7256 12 17.57ZM12 6.42C11.4053 7.26771 10.9527 8.20669 10.66 9.2H13.34C13.0473 8.20669 12.5947 7.26771 12 6.42ZM7.16 14.8C7.83508 15.9657 8.90704 16.8495 10.18 17.29C9.76198 16.4989 9.43329 15.6638 9.2 14.8M21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5ZM19 12C19 10.6155 18.5895 9.26215 17.8203 8.11101C17.0511 6.95986 15.9579 6.06266 14.6788 5.53284C13.3997 5.00303 11.9922 4.86441 10.6344 5.1345C9.2765 5.4046 8.02922 6.07128 7.05025 7.05025C6.07128 8.02922 5.4046 9.2765 5.1345 10.6344C4.86441 11.9922 5.00303 13.3997 5.53284 14.6788C6.06266 15.9579 6.95986 17.0511 8.11101 17.8203C9.26215 18.5895 10.6155 19 12 19C13.8565 19 15.637 18.2625 16.9497 16.9497C18.2625 15.637 19 13.8565 19 12ZM15.15 12C15.1451 12.4683 15.1117 12.9358 15.05 13.4H17.42C17.6616 12.4823 17.6616 11.5177 17.42 10.6H15.05C15.1117 11.0642 15.1451 11.5317 15.15 12ZM13.81 17.29C15.0862 16.8508 16.1618 15.9669 16.84 14.8H14.78C14.5595 15.6665 14.2338 16.5027 13.81 17.29ZM10.36 10.6C10.2107 11.5274 10.2107 12.4726 10.36 13.4H13.64C13.7085 12.9364 13.7452 12.4686 13.75 12C13.7455 11.5314 13.7088 11.0636 13.64 10.6H10.36Z"
+                                    fill="#034269" />
+                            </svg> www.mixspb.ru/onas.php</a>
+                        <div class="firm_link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.54 22.351L11.61 22.391L11.638 22.407C11.749 22.467 11.8733 22.4985 11.9995 22.4985C12.1257 22.4985 12.25 22.467 12.361 22.407L12.389 22.392L12.46 22.351C12.8511 22.1191 13.2328 21.8716 13.604 21.609C14.5651 20.9305 15.463 20.1667 16.287 19.327C18.231 17.337 20.25 14.347 20.25 10.5C20.25 8.31196 19.3808 6.21354 17.8336 4.66637C16.2865 3.11919 14.188 2.25 12 2.25C9.81196 2.25 7.71354 3.11919 6.16637 4.66637C4.61919 6.21354 3.75 8.31196 3.75 10.5C3.75 14.346 5.77 17.337 7.713 19.327C8.53664 20.1667 9.43427 20.9304 10.395 21.609C10.7666 21.8716 11.1485 22.1191 11.54 22.351ZM12 13.5C12.7956 13.5 13.5587 13.1839 14.1213 12.6213C14.6839 12.0587 15 11.2956 15 10.5C15 9.70435 14.6839 8.94129 14.1213 8.37868C13.5587 7.81607 12.7956 7.5 12 7.5C11.2044 7.5 10.4413 7.81607 9.87868 8.37868C9.31607 8.94129 9 9.70435 9 10.5C9 11.2956 9.31607 12.0587 9.87868 12.6213C10.4413 13.1839 11.2044 13.5 12 13.5Z"
+                                    fill="#034269" />
+                            </svg>Санкт-Петербург, Невский пр. 80, БЦ «Невский 80», оф. 4-1, 4 этаж</div>
 
-                          <a href="#" class="button_linear">Посмотреть все туры</a>
+                        <a href="#" class="button_linear">Посмотреть все туры</a>
                     </div>
                     <div class="firm_tours">
                         <div class="label">Последние добавленные туры</div>
-                        <div class="tour_block">
-                            <div class="tour_item">
-                                <div class="tour_name">
-                                    <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
-                                </div>
-                                <div class="tour_addedtime">
-                                    Добавлен 3 часа назад
-                                </div>
-                                <div class="tour_img">
-                                    <img src="assets/image/tour.png" alt="">
-                                </div>
-                                <div class="price">
-                                    30 960₽
+                        <div class="tour_block swiper">
+                            <div class="swiper-wrapper">
 
-                                    <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                                <div class="tour_item swiper-slide" >
+                                    <div class="tour_name">
+                                        <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
+                                    </div>
+                                    <div class="tour_addedtime">
+                                        Добавлен 3 часа назад
+                                    </div>
+                                    <div class="tour_img">
+                                        <img src="assets/image/tour.png" alt="">
+                                    </div>
+                                    <div class="price">
+                                        30 960₽
+    
+                                        <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tour_item">
-                                <div class="tour_name">
-                                    <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
+                                <div class="tour_item swiper-slide" >
+                                    <div class="tour_name">
+                                        <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
+                                    </div>
+                                    <div class="tour_addedtime">
+                                        Добавлен 3 часа назад
+                                    </div>
+                                    <div class="tour_img">
+                                        <img src="assets/image/tour-2.png" alt="">
+                                    </div>
+                                    <div class="price">
+                                        30 960₽
+    
+                                        <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                                    </div>
                                 </div>
-                                <div class="tour_addedtime">
-                                    Добавлен 3 часа назад
+                                <div class="tour_item swiper-slide" >
+                                    <div class="tour_name">
+                                        <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
+                                    </div>
+                                    <div class="tour_addedtime">
+                                        Добавлен 3 часа назад
+                                    </div>
+                                    <div class="tour_img">
+                                        <img src="assets/image/tour-3.png" alt="">
+                                    </div>
+                                    <div class="price">
+                                        30 960₽
+    
+                                        <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                                    </div>
                                 </div>
-                                <div class="tour_img">
-                                    <img src="assets/image/tour-2.png" alt="">
+                                <div class="tour_item swiper-slide" >
+                                    <div class="tour_name">
+                                        <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
+                                    </div>
+                                    <div class="tour_addedtime">
+                                        Добавлен 3 часа назад
+                                    </div>
+                                    <div class="tour_img">
+                                        <img src="assets/image/tour-4.png" alt="">
+                                    </div>
+                                    <div class="price">
+                                        30 960₽
+    
+                                        <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                                    </div>
                                 </div>
-                                <div class="price">
-                                    30 960₽
+                                <div class="tour_item swiper-slide" >
+                                    <div class="tour_name">
+                                        <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
+                                    </div>
+                                    <div class="tour_addedtime">
+                                        Добавлен 3 часа назад
+                                    </div>
+                                    <div class="tour_img">
+                                        <img src="assets/image/tour-3.png" alt="">
+                                    </div>
+                                    <div class="price">
+                                        30 960₽
+    
+                                        <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="tour_item swiper-slide" >
+                                    <div class="tour_name">
+                                        <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
+                                    </div>
+                                    <div class="tour_addedtime">
+                                        Добавлен 3 часа назад
+                                    </div>
+                                    <div class="tour_img">
+                                        <img src="assets/image/tour-4.png" alt="">
+                                    </div>
+                                    <div class="price">
+                                        30 960₽
+    
+                                        <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                                    </div>
+                                </div>
 
-                                    <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="tour_item">
-                                <div class="tour_name">
-                                    <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
-                                </div>
-                                <div class="tour_addedtime">
-                                    Добавлен 3 часа назад
-                                </div>
-                                <div class="tour_img">
-                                    <img src="assets/image/tour-3.png" alt="">
-                                </div>
-                                <div class="price">
-                                    30 960₽
 
-                                    <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="tour_item">
-                                <div class="tour_name">
-                                    <a href="#">Тур: Индонезия. <br> Убуд + побережье о.Бали на 14 дней</a>
-                                </div>
-                                <div class="tour_addedtime">
-                                    Добавлен 3 часа назад
-                                </div>
-                                <div class="tour_img">
-                                    <img src="assets/image/tour-4.png" alt="">
-                                </div>
-                                <div class="price">
-                                    30 960₽
+                               
 
-                                    <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
-                                </div>
                             </div>
+                            <div class="swiper-button-next "></div>
+                            <div class="swiper-button-prev "></div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -168,52 +223,59 @@
                     </div>
                     <div>
                         Микс Тур - туристические поездки по всему миру! <br>
-Мы рады приветствовать Вас! Очень часто слышим, что турагент просто занимается перепродажей тура и на этом все. Но это далеко-далеко не всё! Не нужно недооценивать нашу работу
+                        Мы рады приветствовать Вас! Очень часто слышим, что турагент просто занимается перепродажей тура
+                        и на этом все. Но это далеко-далеко не всё! Не нужно недооценивать нашу работу
                     </div>
 
-<div>Подбор тура по различным направлениям. Выбираем страну, курорт, отель</div>
+                    <div>Подбор тура по различным направлениям. Выбираем страну, курорт, отель</div>
 
-<div>Рассчитываем нестандартные туры (различные перелеты, комбинирование стран, увеличение продолжительности и прочее)</div>
+                    <div>Рассчитываем нестандартные туры (различные перелеты, комбинирование стран, увеличение
+                        продолжительности и прочее)</div>
 
-<div>Оформляем документы для получения визы (если в стране визовый въезд)</div>
+                    <div>Оформляем документы для получения визы (если в стране визовый въезд)</div>
 
-<div>Контролируем выход виз</div>
+                    <div>Контролируем выход виз</div>
 
-<div>Следим за курсами валют</div>
+                    <div>Следим за курсами валют</div>
 
-<div>Оформляем страховку от невыезда (по запросу)</div>
+                    <div>Оформляем страховку от невыезда (по запросу)</div>
 
-<div>Если турист воспользовался страховкой от невыезда, то помогаем со сбором документов для страховой компании</div>
+                    <div>Если турист воспользовался страховкой от невыезда, то помогаем со сбором документов для
+                        страховой компании</div>
 
-<div>Оформляем медицинские страховки</div>
+                    <div>Оформляем медицинские страховки</div>
 
-<div>Направляем туроператорам письма-претензии, если возникают какие-либо неприятности во время отдыха</div>
+                    <div>Направляем туроператорам письма-претензии, если возникают какие-либо неприятности во время
+                        отдыха</div>
 
-<div>Держим связь с отелями для уточнения информации и передачи пожеланий от туристов</div>
+                    <div>Держим связь с отелями для уточнения информации и передачи пожеланий от туристов</div>
 
-<div>Бронируем авиа- и ж/д билеты</div>
+                    <div>Бронируем авиа- и ж/д билеты</div>
 
-<div>
-    За сутки вместе с туристом проверяем время вылета
-Регистрируем туристов на рейс online
-</div>
+                    <div>
+                        За сутки вместе с туристом проверяем время вылета
+                        Регистрируем туристов на рейс online
+                    </div>
 
-<div>Рассказываем о туре. Особенностях страны, получении визы, перелете , перевозе багажа, наличии депозита в отеле, правилах отеля и прочих важных мелочах</div>
+                    <div>Рассказываем о туре. Особенностях страны, получении визы, перелете , перевозе багажа, наличии
+                        депозита в отеле, правилах отеля и прочих важных мелочах</div>
 
-<div>Переживаем о том, чтобы Ваш отдых прошёл хорошо</div>
+                    <div>Переживаем о том, чтобы Ваш отдых прошёл хорошо</div>
 
-<div>Турагент — это важное связующее звено между туристом и туроператором. Именно он может решить большинство ваших вопросов, возникающих от этапа выбора страны отдыха, до приземления домой</div>
+                    <div>Турагент — это важное связующее звено между туристом и туроператором. Именно он может решить
+                        большинство ваших вопросов, возникающих от этапа выбора страны отдыха, до приземления домой
+                    </div>
 
-<div>Именно поэтому настолько важен выбор турагента!</div>
+                    <div>Именно поэтому настолько важен выбор турагента!</div>
 
-<div>Мы сделаем ваш отпуск незабываемым, ведь мы</div>
+                    <div>Мы сделаем ваш отпуск незабываемым, ведь мы</div>
 
-<div>
-    Знаем о путешествиях больше, чем google <br>
-Подберем тур от 15 минут онлайн или в офисе на Невском.? <br>
-Предлагаем каждый день 15 горящих туров <br>
-Предлагаем каждый день 15 акций <br>
-</div>
+                    <div>
+                        Знаем о путешествиях больше, чем google <br>
+                        Подберем тур от 15 минут онлайн или в офисе на Невском.? <br>
+                        Предлагаем каждый день 15 горящих туров <br>
+                        Предлагаем каждый день 15 акций <br>
+                    </div>
                 </div>
             </div>
         </section>
@@ -222,40 +284,41 @@
             <div class="container">
                 <div class="top_tours_inner">
                     <div class="section_title">Горящие туры</div>
-                    <div class="tour_block">
-                        <div class="tour_item">
+                    <div class="tour_block swiper">
+                       <div class="swiper-wrapper">
+                        <div class="tour_item swiper-slide">
                             <div class="tour_name">
                                 <a href="#">Тур: Индонезия. Убуд + побережье о.Бали на 14 дней</a>
                             </div>
                             <div class="stars">
                                 <div class="rating-group">
                                     <input class="rating__input" name="rating" id="rating" value="3" max="5" />
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
@@ -272,39 +335,39 @@
                                 <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
                             </div>
                         </div>
-                        <div class="tour_item">
+                        <div class="tour_item swiper-slide">
                             <div class="tour_name">
                                 <a href="#">Тур: Индонезия. Убуд + побережье о.Бали на 14 дней</a>
                             </div>
                             <div class="stars">
                                 <div class="rating-group">
                                     <input class="rating__input" name="rating" id="rating" value="3" max="5" />
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
@@ -321,39 +384,39 @@
                                 <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
                             </div>
                         </div>
-                        <div class="tour_item">
+                        <div class="tour_item swiper-slide">
                             <div class="tour_name">
                                 <a href="#">Тур: Индонезия. Убуд + побережье о.Бали на 14 дней</a>
                             </div>
                             <div class="stars">
                                 <div class="rating-group">
                                     <input class="rating__input" name="rating" id="rating" value="3" max="5" />
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
@@ -370,39 +433,39 @@
                                 <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
                             </div>
                         </div>
-                        <div class="tour_item">
+                        <div class="tour_item swiper-slide">
                             <div class="tour_name">
                                 <a href="#">Тур: Индонезия. Убуд + побережье о.Бали на 14 дней</a>
                             </div>
                             <div class="stars">
                                 <div class="rating-group">
                                     <input class="rating__input" name="rating" id="rating" value="3" max="5" />
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"
-                                        viewBox="0 0 19 17" fill="none" class="rating__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
                                         <path
                                             d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
                                             fill="#E5EDFE" />
@@ -419,6 +482,110 @@
                                 <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
                             </div>
                         </div>
+
+                        <div class="tour_item swiper-slide">
+                            <div class="tour_name">
+                                <a href="#">Тур: Индонезия. Убуд + побережье о.Бали на 14 дней</a>
+                            </div>
+                            <div class="stars">
+                                <div class="rating-group">
+                                    <input class="rating__input" name="rating" id="rating" value="3" max="5" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                </div>
+                                Отель 5 дней
+                            </div>
+                            <div class="tour_img">
+                                <img src="assets/image/tour.png" alt="">
+                            </div>
+                            <div class="price">
+                                30 960₽
+
+                                <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="tour_item swiper-slide">
+                            <div class="tour_name">
+                                <a href="#">Тур: Индонезия. Убуд + побережье о.Бали на 14 дней</a>
+                            </div>
+                            <div class="stars">
+                                <div class="rating-group">
+                                    <input class="rating__input" name="rating" id="rating" value="3" max="5" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                                        fill="none" class="rating__icon">
+                                        <path
+                                            d="M9.5 0L11.9334 5.65067L18.0595 6.21885L13.4374 10.2793L14.7901 16.2812L9.5 13.14L4.20993 16.2812L5.56263 10.2793L0.940492 6.21885L7.06657 5.65067L9.5 0Z"
+                                            fill="#E5EDFE" />
+                                    </svg>
+                                </div>
+                                Отель 5 дней
+                            </div>
+                            <div class="tour_img">
+                                <img src="assets/image/tour.png" alt="">
+                            </div>
+                            <div class="price">
+                                30 960₽
+
+                                <a href="#"><img src="assets/image/go-icon.svg" alt=""></a>
+                            </div>
+                        </div>
+
+
+                       </div>
+                        <div class="swiper-button-next next_contact_btn"></div>
+                        <div class="swiper-button-prev prev_contact_btn"></div>
                     </div>
                     <a href="#" class="tour_alllink">
                         Посмотреть все туры
@@ -426,8 +593,8 @@
                 </div>
             </div>
         </section>
-          <!-- contact section -->
-          <section class="contact_section">
+        <!-- contact section -->
+        <section class="contact_section">
             <section class="top-product">
                 <div class="container">
                     <!-- title -->
@@ -446,7 +613,8 @@
                                     <div class="product_title">
                                         Августина
                                     </div>
-                                    <div class="contact_description">Эксперт агентства <a href="">Disco Super Star</a></div>
+                                    <div class="contact_description">Эксперт агентства <a href="">Disco Super Star</a>
+                                    </div>
                                     <!--product _bottom info -->
                                     <div class="contact_phone">
                                         <img src="./assets/image/phone.svg" alt="" />
@@ -582,8 +750,8 @@
     <script src="assets/libs/air-datepicker/air-datepicker.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- magnific-popup -->
-    <script src="assets/libs/magnific-popup/jquery.magnific-popup.js"></script>
+    <!-- fancy-box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- custom js -->
     <script src="./assets/js/pro.js"></script>
 </body>

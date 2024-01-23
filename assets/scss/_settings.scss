@@ -516,9 +516,7 @@ html .ui-button.ui-state-disabled:active {
   --fancybox-bg: rgb(0, 0, 0, 0.5);
 }
 
-.fancybox__toolbar__column.is-right {
-  display: none;
-}
+
 .is-horizontal .f-carousel__nav .f-button.is-next,
 .is-horizontal .fancybox__nav .f-button.is-next,
 .is-horizontal .f-carousel__nav .f-button.is-prev,
@@ -528,4 +526,13 @@ html .ui-button.ui-state-disabled:active {
 }
 .f-button svg {
   stroke: #000;
+}
+
+.fancybox__content{
+  width: 500px !important;
+  height: 500px !important;
+  @media #{$Mobile}{
+    width: 200px !important;
+    height: 200px !important;
+  }
 }
