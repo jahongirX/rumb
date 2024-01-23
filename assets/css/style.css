@@ -111,7 +111,7 @@ body {
   border-radius: 12px;
   border: 2px solid #1eb2f1;
   background: #fff;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -182,7 +182,7 @@ body {
   border-radius: 12px;
   border: 2px solid #1eb2f1;
   background: #fff;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -216,7 +216,7 @@ body {
 .button_outline {
   border-radius: 12px;
   border: 1px solid #1eb2f1;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   padding: 16px 48px;
   font-size: 16px;
   font-style: normal;
@@ -255,7 +255,7 @@ body {
 }
 
 .label {
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -279,7 +279,7 @@ body {
   }
 }
 .call_widget .user_name {
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   text-align: center;
   font-size: 22px;
   font-style: normal;
@@ -294,7 +294,7 @@ body {
   }
 }
 .call_widget .user_description {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -305,7 +305,7 @@ body {
   margin-bottom: 33px;
 }
 .call_widget .user_description .link {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -320,7 +320,7 @@ body {
   }
 }
 .call_widget .user_number {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -492,7 +492,7 @@ html .ui-button.ui-state-disabled:active {
   margin-bottom: 8px;
 }
 .turfirmi_description_card .turfirmi_prices .turfirmi_price a {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -871,7 +871,12 @@ header .hamburger {
   background: rgb(229, 237, 254);
   border-radius: 16px;
 }
-.hero .hero_filter .nice-select {
+.hero .hero_filter .dropdown {
+  position: relative;
+  height: 100%;
+  top: -15px;
+}
+.hero .hero_filter .dropdown-toggle {
   outline: none;
   border: none;
   padding: 0;
@@ -883,27 +888,15 @@ header .hamburger {
   color: rgb(49, 112, 246);
   -webkit-appearance: none;
   position: unset;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: end;
   position: relative;
-  top: -15px;
+  top: 0;
   background: transparent;
 }
-.hero .hero_filter .nice-select .list {
-  width: 330px;
-  left: -30px;
-  height: 330px;
-  overflow-y: scroll;
-}
-.hero .hero_filter .nice-select .list::-webkit-scrollbar {
-  width: 10px;
-}
-.hero .hero_filter .nice-select .list::-webkit-scrollbar-thumb {
-  border-radius: 16px;
-  background: #3170f6;
-}
-.hero .hero_filter .nice-select::after {
+.hero .hero_filter .dropdown-toggle::after {
   border: none;
   content: "";
   display: block;
@@ -911,8 +904,6 @@ header .hamburger {
   margin-top: 0;
   pointer-events: none;
   position: absolute;
-  right: 0;
-  top: 50%;
   -webkit-transform-origin: 66% 66%;
   -ms-transform-origin: 66% 66%;
   transform-origin: 66% 66%;
@@ -924,8 +915,50 @@ header .hamburger {
   top: -10px;
   right: 20px;
 }
-.hero .hero_filter .nice-select.open::after {
+.hero .hero_filter .dropdown-toggle.show::after {
   transform: rotate(90deg);
+}
+.hero .hero_filter .dropdown-menu {
+  width: 330px;
+  left: -30px;
+  height: 330px;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 10px;
+}
+@media (min-width:1400px) {
+  .hero .hero_filter .dropdown-menu.show {
+    left: -55px !important;
+    top: 15px !important;
+  }
+}
+@media (max-width:768px) {
+  .hero .hero_filter .dropdown-menu.show {
+    left: -30px !important;
+    top: 15px !important;
+  }
+}
+.hero .hero_filter .dropdown-menu::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+}
+.hero .hero_filter .dropdown-menu::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background: #3170f6;
+}
+.hero .hero_filter .dropdown-menu .dropdown-item {
+  border-radius: 16px;
+  padding: 12px 15px;
+  color: #011927;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.28px;
+}
+.hero .hero_filter .dropdown-menu .dropdown-item:focus,
+.hero .hero_filter .dropdown-menu .dropdown-item:hover {
+  background: #e5edfe;
 }
 
 .top-product {
@@ -1404,7 +1437,7 @@ header .hamburger {
   margin-bottom: 21px;
 }
 .contact_section .product_item .product_action .contact_phone a {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
@@ -2111,7 +2144,7 @@ header .hamburger {
   background: #f2f4fb;
   display: flex;
   flex-direction: column;
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   text-align: center;
   font-family: Manrope;
   font-size: 7px;
@@ -2142,7 +2175,7 @@ header .hamburger {
   flex: 0 0 50%;
 }
 .tour-info .block-body .tour_details .detail_label {
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -2151,7 +2184,7 @@ header .hamburger {
   text-transform: uppercase;
 }
 .tour-info .block-body .tour_details .detail_info {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -2165,7 +2198,7 @@ header .hamburger {
 }
 .tour-info .block-body .tour_details .detail_info.stars {
   display: flex;
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -2217,7 +2250,7 @@ header .hamburger {
   position: absolute;
   border-radius: 2px;
   border: 1px solid #fff;
-  background: var(--Primary-blue-100, #3170f6);
+  background: #3170f6;
   color: #fff;
   padding: 0 8px;
   font-size: 10px;
@@ -2440,7 +2473,7 @@ header .hamburger {
   flex-direction: column;
   gap: 4px;
   padding: 16px 106.49px 16px 16px;
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -2475,7 +2508,7 @@ header .hamburger {
   }
 }
 .tour-info .contacts_block .tel_number span {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -2624,7 +2657,7 @@ header .hamburger {
   border-bottom: 0px;
 }
 .description .description_inner .description_calendar .calendar .air-datepicker-body--day-name {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   text-align: center;
   font-size: 10px;
   font-style: normal;
@@ -2632,7 +2665,7 @@ header .hamburger {
   line-height: 24px; /* 240% */
 }
 .description .description_inner .description_calendar .calendar .air-datepicker-cell {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -2646,7 +2679,7 @@ header .hamburger {
   border: 1px solid #1eb2f1;
 }
 .description .description_inner .description_calendar .calendar .air-datepicker-nav--title {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -2700,7 +2733,7 @@ header .hamburger {
   margin-bottom: 20px;
 }
 .description .description_inner .description_item .text {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -2841,7 +2874,7 @@ header .hamburger {
   position: relative;
   z-index: 1;
   border-radius: 8px;
-  border: 1px solid var(--Gray-80, #e5edfe);
+  border: 1px solid #e5edfe;
   background: #fff;
   background-image: url(../image/dropdown_turfirm.png);
   background-repeat: no-repeat;
@@ -3003,7 +3036,7 @@ header .hamburger {
   }
 }
 .firms .turfirmi_main .turfirmi_locationes .turfirmi_location_card .turfirmi_location_card_info .tel_number span {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -3093,7 +3126,7 @@ header .hamburger {
   margin-bottom: 8px;
 }
 .firms .turfirmi_main .turfirmi_description .turfirmi_description_card .turfirmi_prices .turfirmi_price a {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3162,7 +3195,7 @@ header .hamburger {
 }
 .lists .lists_header {
   background: #fff;
-  border-bottom: 1px solid var(--Gray-100, #ccdbfd);
+  border-bottom: 1px solid #ccdbfd;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -3182,14 +3215,14 @@ header .hamburger {
 }
 .lists .lists_header .letters_block ul a {
   text-transform: uppercase;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .lists .lists_header .letters_block ul a.current {
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
 }
 @media (max-width:768px) {
   .lists .lists_header .letters_block ul a {
@@ -3219,7 +3252,7 @@ header .hamburger {
   }
 }
 .lists .list_body .list_names li a {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -3251,7 +3284,7 @@ header .hamburger {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  border-right: 1px solid var(--Gray-100, #ccdbfd);
+  border-right: 1px solid #ccdbfd;
   background: #fff;
   padding-right: 45px;
   flex: 0 0 30%;
@@ -3259,7 +3292,7 @@ header .hamburger {
 .firm .firm_contacts .firm_name {
   display: flex;
   align-items: center;
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -3268,7 +3301,7 @@ header .hamburger {
   margin-bottom: 4px;
 }
 .firm .firm_contacts .firm_link {
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3346,14 +3379,14 @@ header .hamburger {
 }
 .firm .firm_tours .tour_block .tour_item .tour_name a {
   overflow: hidden;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .firm .firm_tours .tour_block .tour_item .tour_addedtime {
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   margin-top: 5px;
   font-size: 10px;
   font-style: normal;
@@ -3366,7 +3399,7 @@ header .hamburger {
   gap: 16px;
   align-items: center;
   justify-content: space-between;
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -3380,7 +3413,7 @@ header .hamburger {
   background: #fff;
   padding: 20px;
   border-radius: 4px;
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -3403,7 +3436,7 @@ header .hamburger {
 .top_tours .top_tours_inner .tour_block .tour_item {
   flex: 0 0 25%;
   border-radius: 8px;
-  border: 1px solid var(--Gray-100, #ccdbfd);
+  border: 1px solid #ccdbfd;
   background: #fff;
   padding: 20px;
 }
@@ -3416,7 +3449,7 @@ header .hamburger {
 }
 .top_tours .top_tours_inner .tour_block .tour_item .tour_name a {
   overflow: hidden;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -3441,14 +3474,14 @@ header .hamburger {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .top_tours .top_tours_inner .tour_alllink {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -3536,14 +3569,14 @@ header .hamburger {
   .search_content .filter_block .filter_mobile_header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--Gray-80, #e5edfe);
+    border-bottom: 1px solid #e5edfe;
     background: #fff;
     padding: 15px;
     margin-bottom: 40px;
   }
 }
 .search_content .filter_block .filter_mobile_header .clear_filter_toggle {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   text-align: center;
   font-family: Manrope;
   font-size: 14px;
@@ -3613,7 +3646,7 @@ header .hamburger {
 .search_content .filter_block .filter_item #inputs-container input {
   border-radius: 4px;
   border: 1px solid #ccdbfd;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -3627,7 +3660,7 @@ header .hamburger {
 }
 .search_content .filter_block .filter_item #inputs-container .label,
 .search_content .filter_block .filter_item #inputs-container label {
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -3687,7 +3720,7 @@ header .hamburger {
   margin-right: 8px;
 }
 .search_content .result_blok .result_header .filter_links .filter_link {
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -3703,7 +3736,7 @@ header .hamburger {
   margin-left: 30px;
 }
 .search_content .result_blok .result_header .result {
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   text-align: right;
   font-size: 16px;
   font-style: normal;
@@ -3763,7 +3796,7 @@ header .hamburger {
   display: flex;
   gap: 20px;
   border-radius: 8px;
-  border: 1px solid var(--Gray-100, #ccdbfd);
+  border: 1px solid #ccdbfd;
   background: #fff;
 }
 @media (max-width:1025px) {
@@ -3782,7 +3815,7 @@ header .hamburger {
 }
 .search_content .result_blok .result_items .result_item .result_info .result_name {
   overflow: hidden;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 16px;
@@ -3800,7 +3833,7 @@ header .hamburger {
   display: flex;
   align-items: end;
   gap: 12px;
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -3813,7 +3846,7 @@ header .hamburger {
 .search_content .result_blok .result_items .result_item .result_info .result_city {
   display: flex;
   gap: 20px;
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -3830,7 +3863,7 @@ header .hamburger {
 .search_content .result_blok .result_items .result_item .result_info .result_text {
   margin-bottom: 20px;
   overflow: hidden;
-  color: var(--Neutral-Neutral-100, #011927);
+  color: #011927;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -3840,11 +3873,11 @@ header .hamburger {
 }
 .search_content .result_blok .result_items .result_item.light_bg {
   border: 1px solid #f5efe9;
-  background: var(--Golden-80, #fdfafa);
+  background: #fdfafa;
 }
 .search_content .result_blok .result_items .result_item.light_bg .result_details {
   border-radius: 4px;
-  background: var(--Golden-100, #f5efe9);
+  background: #f5efe9;
   padding: 22px 20px;
 }
 .search_content .result_blok .result_items .result_item .result_details {
@@ -3874,7 +3907,7 @@ header .hamburger {
 }
 .search_content .result_blok .result_items .result_item .result_details .result_price {
   flex: 1 1 auto;
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -3891,7 +3924,7 @@ header .hamburger {
   }
 }
 .search_content .result_blok .result_items .result_item .result_details .link {
-  color: var(--Neutral-Neutral-100, #3170f6);
+  color: #3170f6;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3914,7 +3947,7 @@ header .hamburger {
   }
 }
 .search_content .result_blok .result_items .result_item .result_details .result_number .link span {
-  color: var(--Neutral-Neutral-100, #3170f6);
+  color: #3170f6;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3973,7 +4006,7 @@ header .hamburger {
   background: #fff;
   display: flex;
   flex-direction: column;
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
   text-align: center;
   font-size: 10px;
   font-style: normal;
@@ -4014,7 +4047,7 @@ header .hamburger {
   text-transform: uppercase;
   border-radius: 2px;
   border: 1px solid #fff;
-  background: var(--Primary-blue-100, #3170f6);
+  background: #3170f6;
 }
 .search_content .result_blok .banner_inner {
   background-repeat: no-repeat;

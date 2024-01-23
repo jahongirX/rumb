@@ -52,7 +52,7 @@
       background: #f2f4fb;
       display: flex;
       flex-direction: column;
-      color: var(--Neutral-Neutral-80, #034269);
+      color: #034269;
       text-align: center;
       font-family: Manrope;
       font-size: 7px;
@@ -78,7 +78,7 @@
         flex: 0 0 calc(50%);
       }
       .detail_label {
-        color: var(--Neutral-Neutral-80, #034269);
+        color: #034269;
 
         font-size: 10px;
         font-style: normal;
@@ -88,7 +88,7 @@
         text-transform: uppercase;
       }
       .detail_info {
-        color: var(--Neutral-Neutral-100, #011927);
+        color: #011927;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -99,7 +99,7 @@
         }
         &.stars {
           display: flex;
-          color: var(--Neutral-Neutral-100, #011927);
+          color: #011927;
           font-size: 12px;
           font-style: normal;
           font-weight: 400;
@@ -144,7 +144,7 @@
         position: absolute;
         border-radius: 2px;
         border: 1px solid #fff;
-        background: var(--Primary-blue-100, #3170f6);
+        background: #3170f6;
         color: #fff;
         padding: 0 8px;
         font-size: 10px;
@@ -237,14 +237,14 @@
         .swiper-button-next,
         .swiper-button-prev {
           display: none;
-    
+
           @media #{$Mobile} {
             width: 32px;
             height: 32px;
           }
           @media #{$Mobile} {
             display: block;
-    
+
             &::after {
               font-size: 12px;
               color: #fff;
@@ -341,7 +341,7 @@
       flex-direction: column;
       gap: 4px;
       padding: 16px 106.49px 16px 16px;
-      color: var(--Neutral-Neutral-80, #034269);
+      color: #034269;
 
       font-size: 22px;
       font-style: normal;
@@ -373,7 +373,7 @@
     }
     .tel_number {
       span {
-        color: var(--Neutral-Neutral-100, #011927);
+        color: #011927;
         font-family: Manrope;
         font-size: 16px;
         font-style: normal;
@@ -500,7 +500,7 @@
           border-bottom: 0px;
         }
         .air-datepicker-body--day-name {
-          color: var(--Neutral-Neutral-100, #011927);
+          color: #011927;
           text-align: center;
 
           font-size: 10px;
@@ -509,7 +509,7 @@
           line-height: 24px; /* 240% */
         }
         .air-datepicker-cell {
-          color: var(--Neutral-Neutral-100, #011927);
+          color: #011927;
           text-align: center;
           font-size: 14px;
           font-style: normal;
@@ -523,7 +523,7 @@
           }
         }
         .air-datepicker-nav--title {
-          color: var(--Neutral-Neutral-100, #011927);
+          color: #011927;
           font-size: 16px;
           font-style: normal;
           font-weight: 700;
@@ -576,7 +576,7 @@
         margin-bottom: 20px;
       }
       .text {
-        color: var(--Neutral-Neutral-100, #011927);
+        color: #011927;
 
         font-size: 14px;
         font-style: normal;

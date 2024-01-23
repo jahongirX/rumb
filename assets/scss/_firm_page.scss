@@ -13,14 +13,14 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    border-right: 1px solid var(--Gray-100, #ccdbfd);
+    border-right: 1px solid #ccdbfd;
     background: #fff;
     padding-right: 45px;
     flex: 0 0 30%;
     .firm_name {
       display: flex;
       align-items: center;
-      color: var(--Neutral-Neutral-100, #011927);
+      color: #011927;
       font-size: 24px;
       font-style: normal;
       font-weight: 700;
@@ -29,7 +29,7 @@
       margin-bottom: 4px;
     }
     .firm_link {
-      color: var(--Neutral-Neutral-100, #011927);
+      color: #011927;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -67,14 +67,14 @@
       .swiper-button-next,
       .swiper-button-prev {
         display: none;
-  
+
         @media #{$Mobile} {
           width: 32px;
           height: 32px;
         }
         @media #{$Mobile} {
           display: block;
-  
+
           &::after {
             font-size: 12px;
             color: #fff;
@@ -104,7 +104,7 @@
 
           a {
             overflow: hidden;
-            color: var(--Primary-blue-100, #3170f6);
+            color: #3170f6;
 
             font-size: 14px;
             font-style: normal;
@@ -113,7 +113,7 @@
           }
         }
         .tour_addedtime {
-          color: var(--Neutral-Neutral-80, #034269);
+          color: #034269;
           margin-top: 5px;
           font-size: 10px;
           font-style: normal;
@@ -127,7 +127,7 @@
           align-items: center;
           justify-content: space-between;
 
-          color: var(--Neutral-Neutral-80, #034269);
+          color: #034269;
           font-size: 22px;
           font-style: normal;
           font-weight: 600;
@@ -143,7 +143,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 4px;
-    color: var(--Neutral-Neutral-100, #011927);
+    color: #011927;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -168,7 +168,7 @@
       .tour_item {
         flex: 0 0 25%;
         border-radius: 8px;
-        border: 1px solid var(--Gray-100, #ccdbfd);
+        border: 1px solid #ccdbfd;
         background: #fff;
         padding: 20px;
 
@@ -180,7 +180,7 @@
           overflow: hidden;
           a {
             overflow: hidden;
-            color: var(--Primary-blue-100, #3170f6);
+            color: #3170f6;
 
             font-family: Manrope;
             font-size: 16px;
@@ -207,7 +207,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          color: var(--Neutral-Neutral-80, #034269);
+          color: #034269;
 
           font-size: 22px;
           font-style: normal;
@@ -217,7 +217,7 @@
       }
     }
     .tour_alllink {
-      color: var(--Primary-blue-100, #3170f6);
+      color: #3170f6;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;

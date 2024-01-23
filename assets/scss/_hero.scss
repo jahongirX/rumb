@@ -202,8 +202,12 @@
         }
       }
     }
-
-    .nice-select {
+    .dropdown {
+      position: relative;
+      height: 100%;
+      top: -15px;
+    }
+    .dropdown-toggle {
       outline: none;
       border: none;
       padding: 0;
@@ -215,26 +219,14 @@
       color: rgba(49, 112, 246, 1);
       -webkit-appearance: none;
       position: unset;
-
+      width: 100%;
       height: 100%;
       display: flex;
       align-items: end;
       position: relative;
-      top: -15px;
+      top: 0;
       background: transparent;
-      .list {
-        width: 330px;
-        left: -30px;
-        height: 330px;
-        overflow-y: scroll;
-        &::-webkit-scrollbar {
-          width: 10px;
-        }
-        &::-webkit-scrollbar-thumb {
-          border-radius: 16px;
-          background: #3170f6;
-        }
-      }
+
       &::after {
         border: none;
         content: "";
@@ -243,8 +235,7 @@
         margin-top: 0;
         pointer-events: none;
         position: absolute;
-        right: 0;
-        top: 50%;
+
         -webkit-transform-origin: 66% 66%;
         -ms-transform-origin: 66% 66%;
         transform-origin: 66% 66%;
@@ -257,10 +248,51 @@
         top: -10px;
         right: 20px;
       }
-      &.open {
+      &.show {
         &::after {
           transform: rotate(90deg);
         }
+      }
+    }
+    .dropdown-menu {
+      width: 330px;
+      left: -30px;
+      height: 330px;
+      overflow-y: scroll;
+      background-color: #fff;
+      padding: 10px;
+      &.show {
+        @media #{$Bigscreen} {
+          left: -55px !important;
+          top: 15px !important;
+        }
+        @media #{$SmallTab} {
+          left: -30px !important;
+          top: 15px !important;
+        }
+      }
+      &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #fff;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 16px;
+        background: #3170f6;
+      }
+      .dropdown-item {
+        border-radius: 16px;
+        padding: 12px 15px;
+        color: #011927;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.28px;
+      }
+      .dropdown-item:focus,
+      .dropdown-item:hover {
+        background: #e5edfe;
       }
     }
   }

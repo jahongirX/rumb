@@ -76,7 +76,6 @@
     gap: 40px;
     padding: 30px 0 40px 0;
   }
- 
 
   .turfirm_title {
     color: rgba(255, 255, 255, 1);
@@ -99,7 +98,7 @@
       position: relative;
       z-index: 1;
       border-radius: 8px;
-      border: 1px solid var(--Gray-80, #e5edfe);
+      border: 1px solid #e5edfe;
       background: #fff;
       background-image: url(../image/dropdown_turfirm.png);
       background-repeat: no-repeat;
@@ -126,7 +125,7 @@
           width: 290px;
         }
         @media #{$Mobile} {
-            width: 100%;
+          width: 100%;
         }
       }
       &#city {
@@ -135,7 +134,7 @@
           width: 290px;
         }
         @media #{$Mobile} {
-            width: 100%;
+          width: 100%;
         }
       }
     }
@@ -196,8 +195,6 @@
               font-size: 18px;
             }
           }
-
-         
         }
 
         .turfirmi_location_card_info {
@@ -245,7 +242,7 @@
           }
           .tel_number {
             span {
-              color: var(--Neutral-Neutral-100, #011927);
+              color: #011927;
               font-family: Manrope;
               font-size: 16px;
               font-style: normal;
@@ -337,7 +334,7 @@
             padding-bottom: 8px;
             margin-bottom: 8px;
             a {
-              color: var(--Primary-blue-100, #3170f6);
+              color: #3170f6;
 
               font-size: 16px;
               font-style: normal;
@@ -411,7 +408,7 @@
   }
   .lists_header {
     background: #fff;
-    border-bottom: 1px solid var(--Gray-100, #ccdbfd);
+    border-bottom: 1px solid #ccdbfd;
     padding-bottom: 10px;
     margin-bottom: 20px;
     .label {
@@ -429,14 +426,14 @@
         margin-bottom: 8px;
         a {
           text-transform: uppercase;
-          color: var(--Primary-blue-100, #3170f6);
+          color: #3170f6;
           font-size: 16px;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
 
           &.current {
-            color: var(--Neutral-Neutral-80, #034269);
+            color: #034269;
           }
           @media #{$SmallTab} {
             font-size: 10px;
@@ -462,7 +459,7 @@
           flex: 0 0 calc(50% - 15px);
         }
         a {
-          color: var(--Primary-blue-100, #3170f6);
+          color: #3170f6;
 
           font-size: 14px;
           font-style: normal;
@@ -481,4 +478,3 @@
     }
   }
 }
-

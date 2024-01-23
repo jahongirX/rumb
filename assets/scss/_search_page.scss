@@ -66,13 +66,13 @@
       @media #{$Mobile} {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid var(--Gray-80, #e5edfe);
+        border-bottom: 1px solid #e5edfe;
         background: #fff;
         padding: 15px;
         margin-bottom: 40px;
       }
       .clear_filter_toggle {
-        color: var(--Primary-blue-100, #3170f6);
+        color: #3170f6;
         text-align: center;
         font-family: Manrope;
         font-size: 14px;
@@ -140,7 +140,7 @@
         input {
           border-radius: 4px;
           border: 1px solid #ccdbfd;
-          color: var(--Primary-blue-100, #3170f6);
+          color: #3170f6;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -155,7 +155,7 @@
         }
         .label,
         label {
-          color: var(--Neutral-Neutral-80, #034269);
+          color: #034269;
           font-size: 10px;
           font-style: normal;
           font-weight: 400;
@@ -207,7 +207,7 @@
           margin-right: 8px;
         }
         .filter_link {
-          color: var(--Primary-blue-100, #3170f6);
+          color: #3170f6;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -223,7 +223,7 @@
         }
       }
       .result {
-        color: var(--Neutral-Neutral-80, #034269);
+        color: #034269;
         text-align: right;
         font-size: 16px;
         font-style: normal;
@@ -277,7 +277,7 @@
         display: flex;
         gap: 20px;
         border-radius: 8px;
-        border: 1px solid var(--Gray-100, #ccdbfd);
+        border: 1px solid #ccdbfd;
         background: #fff;
         @media #{$Tab} {
           flex-direction: column;
@@ -290,7 +290,7 @@
           }
           .result_name {
             overflow: hidden;
-            color: var(--Primary-blue-100, #3170f6);
+            color: #3170f6;
             text-overflow: ellipsis;
             white-space: nowrap;
             font-size: 16px;
@@ -307,7 +307,7 @@
             display: flex;
             align-items: end;
             gap: 12px;
-            color: var(--Neutral-Neutral-100, #011927);
+            color: #011927;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
@@ -324,7 +324,7 @@
           .result_city {
             display: flex;
             gap: 20px;
-            color: var(--Neutral-Neutral-100, #011927);
+            color: #011927;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -339,7 +339,7 @@
           .result_text {
             margin-bottom: 20px;
             overflow: hidden;
-            color: var(--Neutral-Neutral-100, #011927);
+            color: #011927;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -351,11 +351,11 @@
 
         &.light_bg {
           border: 1px solid #f5efe9;
-          background: var(--Golden-80, #fdfafa);
+          background: #fdfafa;
 
           .result_details {
             border-radius: 4px;
-            background: var(--Golden-100, #f5efe9);
+            background: #f5efe9;
             padding: 22px 20px;
           }
         }
@@ -385,7 +385,7 @@
           .result_price {
             flex: 1 1 auto;
 
-            color: var(--Neutral-Neutral-80, #034269);
+            color: #034269;
 
             font-size: 22px;
             font-style: normal;
@@ -400,7 +400,7 @@
           }
 
           .link {
-            color: var(--Neutral-Neutral-100, #3170f6);
+            color: #3170f6;
 
             font-size: 16px;
             font-style: normal;
@@ -425,7 +425,7 @@
             }
             .link {
               span {
-                color: var(--Neutral-Neutral-100, #3170f6);
+                color: #3170f6;
 
                 font-size: 16px;
                 font-style: normal;
@@ -476,7 +476,7 @@
             background: #fff;
             display: flex;
             flex-direction: column;
-            color: var(--Neutral-Neutral-80, #034269);
+            color: #034269;
             text-align: center;
 
             font-size: 10px;
@@ -521,7 +521,7 @@
       text-transform: uppercase;
       border-radius: 2px;
       border: 1px solid #fff;
-      background: var(--Primary-blue-100, #3170f6);
+      background: #3170f6;
     }
     .banner_inner {
       background-repeat: no-repeat;

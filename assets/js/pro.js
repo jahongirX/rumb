@@ -170,7 +170,7 @@ $(document).ready(function () {
   //   slider stop function
   $(".product_alls").on("click", function (e) {
     swiper = "stop";
-    console.log(swiper);
+   
     $(".btn_next").css({
       display: "none",
     });
@@ -205,21 +205,17 @@ $(document).ready(function () {
     transform: "rotate(0)",
   });
   $("#search").focus(function () {
-    console.log("jhgfdxcg");
+    
     $(".drop_search").css({
       transform: "rotate(180deg)",
     });
   });
   // nice-select  для кастомизаций селектов
 
-  let selects = $(".n_select");
+  
+  
 
-  selects.niceSelect();
 
-  $('.filter_item').on('click',function(e){
-    e.preventDefault();console.log($(this).find(".nice-select"))
-    // $(this).find('.nice-select').addClass('open')
-  })
   // фунцкия  ссылки для выпадающего селекта
 
   $(".option").on("click", function (e) {
@@ -244,11 +240,11 @@ $(document).ready(function () {
       }
 
       counter++;
-      console.log(item);
+      
     });
   });
   let calendars = document.querySelectorAll(".calendar");
-  console.log(calendars);
+  
   if (calendars) {
     calendars.forEach(function (item, index) {
       let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">  <rect width="32" height="32" rx="16" transform="matrix(-1 0 0 1 32 0)" fill="#E5EDFE"/> <path d="M14.1859 21.0045C14.0568 21.131 13.8924 21.2 13.6986 21.2C13.3112 21.2 13 20.901 13 20.5215C13 20.3318 13.0822 20.1593 13.2172 20.0271L17.3268 16.0943L13.2172 12.1729C13.0822 12.0407 13 11.8625 13 11.6785C13 11.299 13.3112 11 13.6986 11C13.8924 11 14.0568 11.069 14.1859 11.1955L18.7534 15.5653C18.9178 15.7148 18.9941 15.8988 19 16.1C19 16.3012 18.9178 16.4737 18.7534 16.629L14.1859 21.0045Z" fill="#011927"/></svg>`;
@@ -282,14 +278,13 @@ $(document).ready(function () {
 
     let m = `calc(100% + ${hh}px)`;
 
-    console.log(m);
+    
     $(".description_call").css({
       top: hh,
       width: dWidth,
     });
   }
-
-  //  console.log( $('#lightgallery'))
+  
 
   // для фиксирования кнопок в tour.html
 
@@ -297,7 +292,7 @@ $(document).ready(function () {
   if (contactsBlock.length) {
     let offsetC = contactsBlock.offset();
     let sticky = offsetC.top;
-    console.log($(window).scrollTop);
+    
     if ($(window).width() <= 576) {
       $(window).on("scroll", function (e) {
         // alert(1)
@@ -406,7 +401,7 @@ $(document).ready(function () {
     $("html").toggleClass("ov");
     $(".filter_block").toggleClass("active");
   });
-  console.log($(".filter_togler").offset());
+  
   // firm page
 
 

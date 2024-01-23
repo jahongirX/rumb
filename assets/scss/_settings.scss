@@ -97,7 +97,7 @@ body {
   border-radius: 12px;
   border: 2px solid #1eb2f1;
   background: #fff;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -173,7 +173,7 @@ body {
   border-radius: 12px;
   border: 2px solid #1eb2f1;
   background: #fff;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   text-align: center;
 
   font-size: 16px;
@@ -204,7 +204,7 @@ body {
 .button_outline {
   border-radius: 12px;
   border: 1px solid #1eb2f1;
-  color: var(--Primary-blue-100, #3170f6);
+  color: #3170f6;
   padding: 16px 48px;
   font-size: 16px;
   font-style: normal;
@@ -242,7 +242,7 @@ body {
   }
 }
 .label {
-  color: var(--Neutral-Neutral-80, #034269);
+  color: #034269;
 
   font-size: 10px;
   font-style: normal;
@@ -265,7 +265,7 @@ body {
   }
 
   .user_name {
-    color: var(--Neutral-Neutral-80, #034269);
+    color: #034269;
     text-align: center;
 
     font-size: 22px;
@@ -279,7 +279,7 @@ body {
     }
   }
   .user_description {
-    color: var(--Neutral-Neutral-100, #011927);
+    color: #011927;
     text-align: center;
 
     font-size: 14px;
@@ -289,7 +289,7 @@ body {
     letter-spacing: 0.56px;
     text-align: center;
     .link {
-      color: var(--Primary-blue-100, #3170f6);
+      color: #3170f6;
 
       font-size: 14px;
       font-style: normal;
@@ -306,7 +306,7 @@ body {
     }
   }
   .user_number {
-    color: var(--Primary-blue-100, #3170f6);
+    color: #3170f6;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -488,7 +488,7 @@ html .ui-button.ui-state-disabled:active {
       padding-bottom: 8px;
       margin-bottom: 8px;
       a {
-        color: var(--Primary-blue-100, #3170f6);
+        color: #3170f6;
 
         font-size: 16px;
         font-style: normal;
@@ -516,7 +516,6 @@ html .ui-button.ui-state-disabled:active {
   --fancybox-bg: rgb(0, 0, 0, 0.5);
 }
 
-
 .is-horizontal .f-carousel__nav .f-button.is-next,
 .is-horizontal .fancybox__nav .f-button.is-next,
 .is-horizontal .f-carousel__nav .f-button.is-prev,
@@ -528,11 +527,12 @@ html .ui-button.ui-state-disabled:active {
   stroke: #000;
 }
 
-.fancybox__content{
+.fancybox__content {
   width: 500px !important;
   height: 500px !important;
-  @media #{$Mobile}{
+  @media #{$Mobile} {
     width: 200px !important;
     height: 200px !important;
   }
 }
+
