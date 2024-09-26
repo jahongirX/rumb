@@ -585,7 +585,7 @@
         letter-spacing: 0.28px;
         margin-bottom: 15px;
 
-        > div {
+        > div,p {
           margin-bottom: 15px;
         }
         @media #{$Mobile} {

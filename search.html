@@ -679,7 +679,7 @@
 
                                     </div>
                                     <div class="button">
-                                        <a href="#" class="button_white">Оставить заявку</a>
+                                        <a href="#" class="button_white modal_opener" data-target=".order_modal">Оставить заявку</a>
                                     </div>
 
                                     <div class="tour_badge">
@@ -1158,6 +1158,44 @@
                 </div>
             </section>
         </footer>
+    </div>
+
+    <div class="modal order_modal show">
+        <div class="modal_body">
+            <div class="modal_close">
+                <a href="#">
+                    <img src="assets/image/close.svg" alt="">
+                </a>
+            </div>
+            <form class="modal_form" method="post">
+                <div class="form_title">Ваш следующий отпуск — за один шаг!</div>
+                <div class="form_subtitle">Заполните заявку, и мы поможем вам найти идеальный тур</div>
+                <div class="form_block">
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="tel" name="phone" placeholder="Телефон">
+                    <label class="agreement">
+                        <input type="checkbox" name="agreement" checked>
+                        <span class="checkmark"></span>
+                        <span class="text">Согласен(а) на обработку персональных данных</span>
+                    </label>
+                    <button class="submit_btn">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal success_modal">
+        <div class="modal_body">
+            <div class="modal_close">
+                <a href="#">
+                    <img src="assets/image/close.svg" alt="">
+                </a>
+            </div>
+            <div class="form_title text-center">Ваша заявка успешно улетела <br> нашему эксперту по туризму</div>
+            <div class="form_image text-center">
+                <img src="assets/image/success.svg" alt="">
+            </div>
+        </div>
     </div>
 
     <!-- jquery -->

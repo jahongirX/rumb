@@ -212,7 +212,7 @@ $(document).ready(function () {
   });
   // nice-select  для кастомизаций селектов
 
-  
+  $('.n_select').niceSelect();
   
 
 
@@ -444,4 +444,24 @@ $(document).ready(function () {
   }
 
   initializeSwiper("tour_block");
+
+  $('.modal_opener').on('click',function(e){
+    e.preventDefault();
+    let target = $(this).data('target');
+    if($(target).length > 0){
+      $(target).addClass('show');
+    }
+  })
+
+  $('.modal_close a').on('click',function(e){
+    e.preventDefault();
+    $(this).parents().find('.modal').removeClass('show')
+  })
+
+  $('.modal_form').on('submit',function(e){
+    e.preventDefault();
+    $('.order_modal').removeClass('show');
+
+    $('.success_modal').addClass('show')
+  })
 });

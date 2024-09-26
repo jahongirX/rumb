@@ -536,3 +536,248 @@ html .ui-button.ui-state-disabled:active {
   }
 }
 
+
+.modal{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease;
+
+  &.show{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.order_modal{
+    .modal_body{
+      background-image: url(../image/suitcase.png), url(../image/globus.svg), linear-gradient(92deg, #1EB2F1 -6.28%, #3170F6 105.6%);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+
+      @media #{$LapTop}{
+        background-position: right 150%, right 100px;
+      }
+      @media #{$Tab}{
+        background-position: 115% 140%, 125% 100px;
+        background-size: 53%, contain, auto;
+      }
+      @media #{$SmallTab}{
+        background-image: url(../image/suitcase.png), url(../image/globus_mob.svg), linear-gradient(92deg, #1EB2F1 -6.28%, #3170F6 105.6%);
+        background-size: 85%, 100%, auto;
+        background-position: 25% 120%, center 105%;
+      }
+    }
+  }
+
+  &.success_modal{
+    .modal_body{
+      padding: 70px;
+
+      .modal_close{
+        right: 30px;
+        top: 30px;
+      }
+      .form_title{
+        margin-bottom: 40px;
+        @media #{$Tab}{
+          margin-bottom: 30px;
+        }
+        @media #{$SmallTab}{
+          line-height: 1.2;
+          br{
+            display: none;
+          }
+        }
+      }
+
+      @media #{$Tab}{
+        .form_image{
+          img{
+            max-width: 98px;
+          }
+        }
+      }
+      
+
+      @media #{$SmallTab}{
+        padding: 96px 24px;
+        .form_image{
+          img{
+            max-width: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .modal_body{
+    width: 100%;
+    max-width: 1175px;
+    border-radius: 8px;
+    background-image: linear-gradient(92deg, #1EB2F1 -6.28%, #3170F6 105.6%);
+    padding: 80px;
+    position: relative;
+    color: #FDFAFA;
+    font-family: Manrope;
+
+    .modal_close{
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      
+      @media #{$SmallTab}{
+        right: 0;
+      }
+    }
+
+    .form_title{
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      line-height: 1;
+
+      @media #{$Tab}{
+        font-size: 30px;
+      }
+      @media #{$SmallTab}{
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+    .form_subtitle{
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 24px;
+
+      @media #{$Tab}{
+        font-size: 16px;
+      }
+      @media #{$SmallTab}{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    .modal_form{
+      
+      .form_block{
+        max-width: 685px;
+        display: flex;
+        gap: 20px 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        [type=text],
+        [type=tel]{
+          width: calc(50% - 15px);
+          flex: 0 0 auto;
+          height: 42px;
+          padding: 0 20px;
+          border-radius: 12px;
+          background: #FFF;
+          border: none;
+          outline: none;
+          font-size: 16px;
+
+          &::placeholder{
+            color: #B2B1B1;
+          }
+
+          @media #{$Tab}{
+            width: 100%;
+            max-width: 327px;
+          }
+        }
+
+        .agreement{
+          flex: 0 0 auto;
+          width: 100%;
+          color: rgba(255, 255, 255, 0.80);
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          gap: 0 14px;
+          cursor: pointer;
+          input{
+            display: none;
+
+            &:checked ~ .checkmark::after{
+              opacity: 1;
+            }
+          }
+
+          .checkmark{
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            border-radius: 3px;
+            position: relative;
+
+            &::after{
+              content: '';
+              display: block;
+              position: absolute;
+              left: 6px;
+              top: 2px;
+              width: 8px;
+              height: 13px;
+              border: solid #1EB2F1;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+              opacity: 0;
+              transition: .3s all ease;
+            }
+          }
+        }
+
+        .submit_btn{
+          font-size: 16px;
+          font-weight: 600;
+          color: #034269;
+          padding: 12px 38px;
+          border-radius: 12px;
+          border: 1px solid #FEFFD2;
+          background: linear-gradient(266deg, #F8B918 0.3%, #F9D30D 102.42%);
+          box-shadow: 0px 2px 20px 0px #157FDE;
+
+          @media #{$SmallTab}{
+            margin: 0 auto;
+            width: 100%;
+          }
+        }
+
+        @media #{$LapTop}{
+          flex-direction: column;
+
+          .submit_btn{
+            max-width: 205px;
+            padding: 12px 0;
+          }
+        }
+      }
+    }
+
+    @media #{$LapTop}{
+      max-width: 854px;
+      padding: 40px 40px 60px 40px;
+    }
+
+    @media #{$Tab}{
+      max-width: 676px;
+      padding: 40px;
+    }
+
+    @media #{$SmallTab}{
+      max-width: 345px;
+      padding: 20px 20px 170px 20px;
+    }
+  }
+}
